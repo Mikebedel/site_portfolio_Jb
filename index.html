@@ -3,987 +3,573 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jean Bedel N'Guessan — Marketing, Branding &amp; Communication 360° à Abidjan</title>
-<meta name="description" content="Responsable Marketing &amp; Communication à Abidjan. Stratégie marketing, branding, communication 360° et campagnes digitales. Réservez votre séance découverte offerte.">
-<meta property="og:title" content="Jean Bedel N'Guessan — Marketing &amp; Branding">
-<meta property="og:description" content="On ne vous voit pas ? Réglons ça. Stratégie, branding et communication 360° depuis Abidjan.">
+<title>JBN Studio — Marketing, Branding &amp; Communication 360° · Abidjan</title>
+<meta name="description" content="JBN Studio, studio de marque dirigé par Jean Bedel N'Guessan à Abidjan : stratégie marketing, branding, communication 360° et campagnes digitales. Séance découverte offerte.">
+<meta property="og:title" content="JBN Studio — Penser. Bâtir. Faire rayonner.">
+<meta property="og:description" content="Stratégie, branding et communication 360° depuis Abidjan. Dirigé par Jean Bedel N'Guessan.">
 <meta property="og:image" content="assets/img/hero.jpg">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0A1628">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FF8A1F'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='800' font-size='28' text-anchor='middle' fill='%230A1628'%3EJB%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#07080B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FF7A1A'/%3E%3Ctext x='32' y='41' font-family='Arial' font-weight='900' font-size='22' text-anchor='middle' fill='%2307080B'%3EJBN%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;family=Inter:wght@400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap">
-<style>
-:root{--accent:#FF8A1F;--ink:#0A1628}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:#0A1628;overflow-x:hidden}
-img{max-width:100%}
-::selection{background:var(--accent);color:#0A1628}
-
-
-a{color:#FF8A1F}a:hover{color:#FFB066}
-.navlinks a{color:#C9D3E0;text-decoration:none}
-.navlinks a:hover{color:#FFFFFF}
-.lift{transition:transform .25s ease, border-color .25s ease}
-.lift:hover{transform:translateY(-4px)}
-.chip{cursor:pointer;font:inherit}
-.vthumb{cursor:pointer;font:inherit;text-align:left}
-input,select,textarea{font:inherit}
-input:focus,select:focus,textarea:focus{outline:2px solid #FF8A1F;outline-offset:2px}
-.faq summary{cursor:pointer;list-style:none}
-.faq summary::-webkit-details-marker{display:none}
-.faq details[open] .plus{transform:rotate(45deg)}
-.plus{transition:transform .2s ease}
-@keyframes defile{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.marquee{display:flex;width:max-content;animation:defile 38s linear infinite}
-.marquee.rev{animation-direction:reverse;animation-duration:46s}
-@media (prefers-reduced-motion: reduce){.marquee{animation:none}}
-@media (max-width: 900px){.navlinks{display:none !important}}
-
-
-/* ---------- MOTION ---------- */
-.loader{position:fixed;inset:0;z-index:100;background:#0A1628;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px}
-.loader-mark{width:84px;height:84px;border-radius:20px;background:var(--accent);color:#0A1628;display:flex;align-items:center;justify-content:center;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px}
-.loader-bar{width:160px;height:3px;border-radius:3px;background:rgba(255,255,255,.12);overflow:hidden}
-.loader-bar span{display:block;height:100%;width:0;background:var(--accent)}
-.progress{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--accent);transform-origin:0 50%;transform:scaleX(0);z-index:60}
-.cursor{position:fixed;top:0;left:0;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:var(--accent);pointer-events:none;z-index:90;mix-blend-mode:difference;transition:width .25s,height .25s,margin .25s,opacity .25s;opacity:0}
-.cursor.big{width:56px;height:56px;margin:-28px 0 0 -28px}
-@media (hover:none),(pointer:coarse){.cursor{display:none}}
-.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
-.wi{display:inline-block;will-change:transform}
-.hero-line{display:block;overflow:hidden;padding-bottom:.06em}
-.hero-line>span{display:block}
-.float{animation:flotte 5s ease-in-out infinite}
-@keyframes flotte{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
-.wa-pulse{position:relative}
-.wa-pulse::before{content:"";position:absolute;inset:0;border-radius:999px;background:#25D366;z-index:-1;animation:pulse 2.4s ease-out infinite}
-@keyframes pulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.35);opacity:0}}
-header.nav-hidden{transform:translateY(-100%)}
-header{transition:transform .35s ease}
-.tilt{transform-style:preserve-3d;will-change:transform}
-.chip,.vthumb{transition:background .25s,border-color .25s,color .25s,transform .2s}
-.chip:active,.vthumb:active{transform:scale(.97)}
-@media (prefers-reduced-motion: reduce){
-  .loader,.cursor{display:none!important}
-  .float,.wa-pulse::before{animation:none}
-  html{scroll-behavior:auto}
-}
-</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=5">
 </head>
 <body>
-<div class="loader" aria-hidden="true"><div class="loader-mark">JB</div><div class="loader-bar"><span></span></div></div>
+
+<div class="loader" aria-hidden="true">
+  <div class="loader-top"><span>JBN Studio</span><span>Abidjan — CI</span></div>
+  <div>
+    <div class="loader-num"><b class="lnum">0</b><span>%</span></div>
+    <div class="loader-bar"><i></i></div>
+  </div>
+  <div class="loader-bot"><span>Stratégie · Branding · 360°</span><span>Chargement de l'expérience</span></div>
+</div>
 <div class="progress" aria-hidden="true"></div>
 <div class="cursor" aria-hidden="true"></div>
-<div style="background: #0A1628; color: #F4F1EA; font-family: 'Inter', system-ui, sans-serif; font-size: 16px; line-height: 1.6; min-width: 0">
+<div class="cursor-ring" aria-hidden="true"></div>
 
-<!-- NAV -->
-<header style="position: sticky; top: 0; z-index: 20; background: rgba(10,22,40,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.08)">
-<nav style="max-width: 1240px; margin: 0 auto; padding: 16px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px" aria-label="Navigation principale">
-<a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #F4F1EA">
-<span style="width: 40px; height: 40px; border-radius: 10px; background: var(--accent); color: #0A1628; display: flex; align-items: center; justify-content: center; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 17px; letter-spacing: -0.5px">JB</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: -0.3px">N'Guessan<span style="color: var(--accent)">.</span></span>
-</a>
-<div class="navlinks" style="display: flex; gap: 4px; padding: 6px; border-radius: 999px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); font-size: 14px; font-weight: 500">
-<a href="#offres" style="padding: 8px 14px">Offres</a>
-<a href="#apropos" style="padding: 8px 14px">À propos</a>
-<a href="#realisations" style="padding: 8px 14px">Réalisations</a>
-<a href="#videos" style="padding: 8px 14px">Vidéos</a>
-<a href="#creations" style="padding: 8px 14px">Créations</a>
-<a href="#strategies" style="padding: 8px 14px">Stratégies</a>
-</div>
-<a href="#contact" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 20px; border-radius: 999px; background: var(--accent); color: #0A1628; font-weight: 600; font-size: 14px; text-decoration: none">Réserver un appel</a>
-</nav>
+<!-- NAVIGATION -->
+<header class="nav">
+  <nav class="nav-in" aria-label="Navigation principale">
+    <a href="#top" class="logo" aria-label="JBN Studio, retour en haut">
+      <span class="logo-mark">JBN</span>
+      <span class="logo-txt"><b>JBN Studio</b><small>Marketing &amp; Branding</small></span>
+    </a>
+    <div class="links">
+      <a href="#offres">Offres</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#creations">Créations</a>
+      <a href="#videos">Vidéos</a>
+      <a href="#strategies">Stratégies</a>
+      <a href="#studio">Le studio</a>
+    </div>
+    <a href="#contact" class="btn btn-p btn-sm" data-offer="0">Réserver un appel</a>
+  </nav>
 </header>
 
+<main>
+
 <!-- HERO -->
-<section id="top" style="max-width: 1240px; margin: 0 auto; padding: 72px 32px 56px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
-<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
-<div style="display: inline-flex; align-self: flex-start; align-items: center; gap: 10px; padding: 8px 14px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.14); font-size: 13px; color: #C9D3E0">
-<span style="width: 8px; height: 8px; border-radius: 50%; background: #4ADE80"></span>
-Disponible pour de nouvelles missions · Abidjan
-</div>
-<h1 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(52px, 7.4vw, 112px); line-height: 0.94; letter-spacing: -0.045em">
-<span style="display: block">On ne vous</span>
-<span style="display: block">voit pas ?</span>
-<span style="display: block; color: var(--accent)">Réglons ça.</span>
-</h1>
-<p style="margin: -8px 0 0; font-family: 'Instrument Serif', serif; font-style: italic; font-size: 30px; line-height: 1.1; color: #DCE3EC">Penser. Bâtir. Faire rayonner.</p>
-<p style="margin: 0; max-width: 560px; font-size: 19px; line-height: 1.6; color: #C9D3E0">Je suis <strong style="color: #F4F1EA; font-weight: 600">Jean Bedel N'Guessan</strong>. J'aide les entreprises, organisations et personnalités à bâtir une marque qui se voit, se comprend et <strong style="color: #F4F1EA; font-weight: 600">attire des clients</strong> — de la stratégie au contenu, en Côte d'Ivoire et à l'international.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 12px">
-<a href="#contact" data-offer="0" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 26px; border-radius: 999px; background: var(--accent); color: #0A1628; font-weight: 600; text-decoration: none">Réserver ma séance offerte
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-</a>
-<a href="#offres" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 26px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.22); color: #F4F1EA; font-weight: 600; text-decoration: none">Voir mes offres</a>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px; color: #A9B6C8">
-<span style="display: inline-flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>30 min offertes</span>
-<span style="display: inline-flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>Sans engagement</span>
-<span style="display: inline-flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"></path></svg>Réponse sous 24 h</span>
-</div>
-</div>
-<div style="flex: 1 1 380px; min-width: 0; position: relative">
-<div style="border-radius: 28px; overflow: hidden; aspect-ratio: 4 / 5; background: #10213A; border: 1px solid rgba(255,255,255,0.1)">
-<img src="assets/img/hero.jpg" alt="Portrait de Jean Bedel N'Guessan en costume bleu" style="width: 100%; height: 100%; object-fit: cover; display: block">
-</div>
-<div style="position: absolute; left: -20px; bottom: 32px; padding: 16px 20px; border-radius: 18px; background: #F4F1EA; color: #0A1628; box-shadow: 0 20px 40px rgba(0,0,0,0.35); display: flex; flex-direction: column; gap: 2px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 30px; line-height: 1; letter-spacing: -0.03em">1M+</span>
-<span style="font-size: 13px; color: #3B4A5E">vues mensuelles sur Meta</span>
-</div>
-</div>
+<section id="top" class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <canvas id="mask" aria-hidden="true"></canvas>
+  <div class="hud hud-tl"><span><i class="dot"></i><b>Disponible</b> — nouvelles missions</span><span>Abidjan · <b class="clock">--:--</b> GMT</span></div>
+  <div class="hud hud-tr"><span>5°20′N · 4°01′W</span><span>[ Studio de marque ]</span><span>Est. 2020 — v.26</span></div>
+  <div class="hud hud-mr">Masque Baoulé · Côte d'Ivoire</div>
+
+  <div class="wrap hero-body">
+    <span class="tag">JBN Studio — Stratégie · Branding · 360°</span>
+    <h1 class="h1">
+      <span class="ln"><span>Penser.</span></span>
+      <span class="ln"><span>Bâtir.</span></span>
+      <span class="ln"><span class="it">Faire rayonner.</span></span>
+    </h1>
+    <div class="hero-foot">
+      <div style="display:flex;flex-direction:column;gap:22px">
+        <p class="lead">Le studio qui aide entreprises, organisations et personnalités à bâtir une marque qui se voit, se comprend et <strong style="color:#fff">attire des clients</strong>. Dirigé par Jean Bedel N'Guessan, depuis Abidjan.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          <a href="#contact" class="btn btn-p magnet" data-offer="0">Réserver ma séance offerte
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="#offres" class="btn btn-g magnet">Voir les offres</a>
+        </div>
+        <div class="checks"><span>30 min offertes</span><span>Sans engagement</span><span>Réponse sous 24 h</span></div>
+      </div>
+      <div class="scroll-ind"><i></i>Défiler</div>
+    </div>
+  </div>
 </section>
 
-<!-- STATS -->
-<section style="max-width: 1240px; margin: 0 auto; padding: 0 32px 72px">
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); border-top: 1px solid rgba(255,255,255,0.12)">
-<div style="padding: 28px 24px 0 0; display: flex; flex-direction: column; gap: 6px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 48px; line-height: 1; letter-spacing: -0.03em">5<span style="color: var(--accent)">+</span></span>
-<span style="font-size: 14px; color: #A9B6C8">ans en marketing &amp; communication 360°</span>
+<!-- BANDES -->
+<div class="bands" aria-label="Nos métiers">
+  <div class="band band-a"><div class="marquee" aria-hidden="true">
+    <span>Stratégie marketing</span><span>✦</span><span>Branding</span><span>✦</span><span>Communication 360°</span><span>✦</span><span>Meta Ads</span><span>✦</span><span>Événementiel</span><span>✦</span><span>Contenus &amp; reels</span><span>✦</span><span>Plan média</span><span>✦</span>
+    <span>Stratégie marketing</span><span>✦</span><span>Branding</span><span>✦</span><span>Communication 360°</span><span>✦</span><span>Meta Ads</span><span>✦</span><span>Événementiel</span><span>✦</span><span>Contenus &amp; reels</span><span>✦</span><span>Plan média</span><span>✦</span>
+  </div></div>
+  <div class="band band-b"><div class="marquee" aria-hidden="true">
+    <span>Big Idea</span><em>//</em><span>Key visuals</span><em>//</em><span>Personal branding</span><em>//</em><span>Growth</span><em>//</em><span>KPI</span><em>//</em><span>Copy strategy</span><em>//</em><span>Rebranding</span><em>//</em><span>Motion design</span><em>//</em>
+    <span>Big Idea</span><em>//</em><span>Key visuals</span><em>//</em><span>Personal branding</span><em>//</em><span>Growth</span><em>//</em><span>KPI</span><em>//</em><span>Copy strategy</span><em>//</em><span>Rebranding</span><em>//</em><span>Motion design</span><em>//</em>
+  </div></div>
+  <p class="sr">Stratégie marketing, branding, communication 360°, Meta Ads, événementiel, contenus et plan média.</p>
 </div>
-<div style="padding: 28px 24px 0 0; display: flex; flex-direction: column; gap: 6px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 48px; line-height: 1; letter-spacing: -0.03em">30 000</span>
-<span style="font-size: 14px; color: #A9B6C8">participants — Conférence de Pentecôte 2026</span>
-</div>
-<div style="padding: 28px 24px 0 0; display: flex; flex-direction: column; gap: 6px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 48px; line-height: 1; letter-spacing: -0.03em">6</span>
-<span style="font-size: 14px; color: #A9B6C8">pays de campagne : CI, Liberia, Togo, Bénin, Soudan du Sud, Sénégal</span>
-</div>
-<div style="padding: 28px 24px 0 0; display: flex; flex-direction: column; gap: 6px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 48px; line-height: 1; letter-spacing: -0.03em">10<span style="color: var(--accent)">+</span></span>
-<span style="font-size: 14px; color: #A9B6C8">marques et organisations accompagnées</span>
-</div>
-</div>
+
+<!-- CHIFFRES -->
+<section class="wrap" style="padding-top:72px;padding-bottom:80px">
+  <div class="stats">
+    <div class="stat"><b><span class="count" data-to="5">5</span><em>+</em></b><span>ans en marketing &amp; communication 360°</span></div>
+    <div class="stat"><b><span class="count" data-to="30000">30 000</span></b><span>participants — Conférence de Pentecôte 2026</span></div>
+    <div class="stat"><b><span class="count" data-to="6">6</span></b><span>pays de campagne : CI, Liberia, Togo, Bénin, Soudan du Sud, Sénégal</span></div>
+    <div class="stat"><b><span class="count" data-to="1">1</span><em>M+</em></b><span>vues mensuelles générées sur Meta</span></div>
+  </div>
 </section>
 
-<!-- BANDES DEFILANTES -->
-<section aria-label="Mes métiers" style="overflow: hidden; padding: 8px 0 56px">
-<div style="background: var(--accent); color: #0A1628; padding: 18px 0; transform: rotate(-1.5deg); margin: 0 -40px; overflow: hidden">
-<div class="marquee" aria-hidden="true" style="gap: 36px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 34px; letter-spacing: -0.02em; text-transform: uppercase; white-space: nowrap">
-<span>Stratégie marketing</span><span>✦</span><span>Branding</span><span>✦</span><span>Communication 360°</span><span>✦</span><span>Meta Ads</span><span>✦</span><span>Événementiel</span><span>✦</span><span>Contenus &amp; reels</span><span>✦</span><span>Plan média</span><span>✦</span>
-<span>Stratégie marketing</span><span>✦</span><span>Branding</span><span>✦</span><span>Communication 360°</span><span>✦</span><span>Meta Ads</span><span>✦</span><span>Événementiel</span><span>✦</span><span>Contenus &amp; reels</span><span>✦</span><span>Plan média</span><span>✦</span>
-</div>
-</div>
-<div style="background: #F4F1EA; color: #0A1628; padding: 14px 0; transform: rotate(1deg); margin: -6px -40px 0; overflow: hidden">
-<div class="marquee rev" aria-hidden="true" style="gap: 32px; font-family: 'Instrument Serif', serif; font-style: italic; font-size: 30px; white-space: nowrap">
-<span>Big Idea</span><span>·</span><span>Key visuals</span><span>·</span><span>Personal branding</span><span>·</span><span>Growth</span><span>·</span><span>KPI</span><span>·</span><span>Copy strategy</span><span>·</span><span>Rebranding</span><span>·</span><span>Motion design</span><span>·</span>
-<span>Big Idea</span><span>·</span><span>Key visuals</span><span>·</span><span>Personal branding</span><span>·</span><span>Growth</span><span>·</span><span>KPI</span><span>·</span><span>Copy strategy</span><span>·</span><span>Rebranding</span><span>·</span><span>Motion design</span><span>·</span>
-</div>
-</div>
-<p style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Stratégie marketing, branding, communication 360°, Meta Ads, événementiel, contenus et plan média.</p>
-</section>
-
-<!-- CLIENTS MARQUEE -->
-<section style="border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 28px 0; overflow: hidden">
-<div style="max-width: 1240px; margin: 0 auto; padding: 0 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 14px 40px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #A9B6C8">Ils m'ont confié leur marque</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; color: #DCE3EC">Messages de Vie</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; color: #DCE3EC">Conférences de Pentecôte</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; color: #DCE3EC">Strauss Construction</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; color: #DCE3EC">CINergie CI</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; color: #DCE3EC">Cure's Nappy</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; color: #DCE3EC">Vons Cosmetic</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; color: #DCE3EC">FDGF</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; color: #DCE3EC">Deri Jess</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 20px; color: #DCE3EC">Maria Academy</span>
-</div>
+<!-- CLIENTS -->
+<section class="clients" aria-label="Clients">
+  <div class="wrap">
+    <span class="mono">Ils nous ont confié leur marque</span>
+    <b>Messages de Vie</b><b>Conférences de Pentecôte</b><b>Strauss Construction</b><b>CINergie CI</b><b>Cure's Nappy</b><b>Vons Cosmetic</b><b>FDGF</b><b>Deri Jess</b><b>Maria Academy</b>
+  </div>
 </section>
 
 <!-- POUR QUI -->
-<section style="max-width: 1240px; margin: 0 auto; padding: 120px 32px 40px; display: flex; flex-direction: column; gap: 48px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent)">Vous vous reconnaissez ?</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 64px); line-height: 1.02; letter-spacing: -0.035em">Un bon produit, <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: var(--accent)">mais une image qui ne suit pas.</span></h2>
-<p style="margin: 0; font-size: 18px; color: #C9D3E0">Vous publiez sans stratégie, vos pubs coûtent sans rapporter, votre marque ne reflète plus qui vous êtes. Je travaille avec trois types de clients.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
-<article class="lift" style="padding: 32px; border-radius: 24px; background: #10213A; border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 14px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-6h6v6"></path></svg>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em">Entreprises &amp; PME</h3>
-<p style="margin: 0; color: #C9D3E0; font-size: 15px">BTP, beauté, services, tech : vous voulez une marque crédible et des campagnes qui génèrent des demandes.</p>
-<span style="margin-top: auto; font-size: 14px; color: #A9B6C8">→ Audit, rebranding, accompagnement mensuel</span>
-</article>
-<article class="lift" style="padding: 32px; border-radius: 24px; background: #10213A; border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 14px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.5c3 0 6 1.8 6 5"></path></svg>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em">Organisations &amp; événements</h3>
-<p style="margin: 0; color: #C9D3E0; font-size: 15px">ONG, fondations, églises, conférences : vous devez mobiliser, rassembler et faire passer un message fort.</p>
-<span style="margin-top: auto; font-size: 14px; color: #A9B6C8">→ Plan de com 360°, dispositif événementiel</span>
-</article>
-<article class="lift" style="padding: 32px; border-radius: 24px; background: #10213A; border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 14px">
-<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"></path></svg>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em">Entrepreneurs &amp; artistes</h3>
-<p style="margin: 0; color: #C9D3E0; font-size: 15px">Vous êtes votre propre marque : il faut un positionnement clair et une présence qui inspire confiance.</p>
-<span style="margin-top: auto; font-size: 14px; color: #A9B6C8">→ Séance stratégique, personal branding</span>
-</article>
-</div>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="tag">Vous vous reconnaissez ?</span>
+        <h2 class="h2">Un bon produit, <span class="it">mais une image qui ne suit pas.</span></h2>
+      </div>
+      <p>Vous publiez sans stratégie, vos pubs coûtent sans rapporter, votre marque ne reflète plus qui vous êtes. Le studio travaille avec trois types de clients.</p>
+    </div>
+    <div class="grid g3">
+      <article class="card tilt">
+        <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-6h6v6"/></svg></span>
+        <h3 class="h3">Entreprises &amp; PME</h3>
+        <p>BTP, beauté, services, tech : vous voulez une marque crédible et des campagnes qui génèrent des demandes.</p>
+        <div class="foot"><span class="mono">→ Audit · Rebranding · Mensuel</span></div>
+      </article>
+      <article class="card tilt">
+        <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 14.5c3 0 6 1.8 6 5"/></svg></span>
+        <h3 class="h3">Organisations &amp; événements</h3>
+        <p>ONG, fondations, églises, conférences : vous devez mobiliser, rassembler et faire passer un message fort.</p>
+        <div class="foot"><span class="mono">→ Plan 360° · Événementiel</span></div>
+      </article>
+      <article class="card tilt">
+        <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg></span>
+        <h3 class="h3">Entrepreneurs &amp; artistes</h3>
+        <p>Vous êtes votre propre marque : il faut un positionnement clair et une présence qui inspire confiance.</p>
+        <div class="foot"><span class="mono">→ Séance · Personal branding</span></div>
+      </article>
+    </div>
+  </div>
 </section>
 
 <!-- OFFRES -->
-<section id="offres" style="max-width: 1240px; margin: 0 auto; padding: 80px 32px 120px; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 700px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent)">Offres &amp; séances</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 64px); line-height: 1.02; letter-spacing: -0.035em">Choisissez <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: var(--accent)">comment avancer.</span></h2>
-</div>
-<p style="margin: 0; max-width: 380px; color: #A9B6C8">D'une séance ponctuelle à une direction marketing externalisée. Tout commence par un échange gratuit.</p>
-</div>
+<section id="offres" class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="tag">Offres &amp; séances</span>
+        <h2 class="h2">Choisissez <span class="it">comment avancer.</span></h2>
+      </div>
+      <p>D'une séance ponctuelle à une direction marketing externalisée. Tout commence par un échange gratuit.</p>
+    </div>
 
-<article style="display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between; padding: 40px; border-radius: 28px; background: var(--accent); color: #0A1628">
-<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<div style="display: flex; flex-wrap: wrap; gap: 8px">
-<span style="padding: 4px 12px; border-radius: 999px; background: #0A1628; color: #F4F1EA; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase">Offerte</span>
-<span style="padding: 4px 12px; border-radius: 999px; border: 1.5px solid #0A1628; font-size: 12px; font-weight: 700">30 min · visio ou WhatsApp</span>
-</div>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: -0.03em; line-height: 1.05">Séance découverte : votre marque passée au crible</h3>
-<p style="margin: 0; font-size: 17px; max-width: 620px">On analyse votre situation, vos objectifs et votre communication actuelle. Vous repartez avec <strong>3 recommandations concrètes</strong> à appliquer dès la semaine suivante — que l'on travaille ensemble ou non.</p>
-</div>
-<a href="#contact" data-offer="0" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 28px; border-radius: 999px; background: #0A1628; color: #F4F1EA; font-weight: 600; text-decoration: none">Réserver ma séance
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
-</article>
+    <article class="feat">
+      <div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px"><span class="pill" style="background:var(--ink);color:var(--text)">Offerte</span><span class="pill pill-o">30 min · visio ou WhatsApp</span></div>
+        <h3>Séance découverte : votre marque passée au crible</h3>
+        <p>On analyse votre situation, vos objectifs et votre communication actuelle. Vous repartez avec <strong>3 recommandations concrètes</strong> à appliquer dès la semaine suivante — que l'on travaille ensemble ou non.</p>
+      </div>
+      <a href="#contact" class="btn btn-d magnet" data-offer="0">Réserver ma séance
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </article>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px">
-
-<article class="lift" style="padding: 32px; border-radius: 24px; background: #10213A; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; gap: 18px">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><span style="font-size: 13px; color: #A9B6C8">1 h 30 · en ligne ou à Abidjan</span></div>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em; line-height: 1.1">Séance stratégique 1:1</h3>
-<p style="margin: 0; color: #C9D3E0; font-size: 15px">Un atelier de travail sur un sujet précis : positionnement, plan de com, Meta Ads, calendrier éditorial ou personal branding.</p>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px">
-<li style="display: flex; gap: 10px"><span style="color: var(--accent)">✓</span>Préparation sur la base d'un questionnaire</li>
-<li style="display: flex; gap: 10px"><span style="color: var(--accent)">✓</span>Compte rendu et plan d'action écrit</li>
-<li style="display: flex; gap: 10px"><span style="color: var(--accent)">✓</span>Suivi par message pendant 7 jours</li>
-</ul>
-<div style="margin-top: auto; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.12); display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px">[Prix] <span style="font-size: 14px; font-weight: 500; color: #A9B6C8">FCFA</span></span>
-<a href="#contact" data-offer="1" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--accent); color: #F4F1EA; font-size: 14px; font-weight: 600; text-decoration: none">Réserver</a>
-</div>
-</article>
-
-<article class="lift" style="padding: 32px; border-radius: 24px; background: #10213A; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; gap: 18px">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><span style="font-size: 13px; color: #A9B6C8">Livré en 10 jours · rapport PDF</span></div>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em; line-height: 1.1">Audit de marque &amp; communication</h3>
-<p style="margin: 0; color: #C9D3E0; font-size: 15px">Diagnostic complet de votre image, de vos réseaux sociaux et de vos campagnes, avec un plan d'action priorisé.</p>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px">
-<li style="display: flex; gap: 10px"><span style="color: var(--accent)">✓</span>Analyse de la concurrence</li>
-<li style="display: flex; gap: 10px"><span style="color: var(--accent)">✓</span>Audit réseaux sociaux &amp; publicités</li>
-<li style="display: flex; gap: 10px"><span style="color: var(--accent)">✓</span>Restitution en séance de 1 h</li>
-</ul>
-<div style="margin-top: auto; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.12); display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px">[Prix] <span style="font-size: 14px; font-weight: 500; color: #A9B6C8">FCFA</span></span>
-<a href="#contact" data-offer="2" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--accent); color: #F4F1EA; font-size: 14px; font-weight: 600; text-decoration: none">Demander un audit</a>
-</div>
-</article>
-
-<article class="lift" style="padding: 32px; border-radius: 24px; background: #F4F1EA; color: #0A1628; display: flex; flex-direction: column; gap: 18px; position: relative">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><span style="font-size: 13px; color: #3B4A5E">4 à 8 semaines</span><span style="padding: 4px 10px; border-radius: 999px; background: #0A1628; color: var(--accent); font-size: 12px; font-weight: 700">Le plus demandé</span></div>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em; line-height: 1.1">Pack Lancement / Rebranding</h3>
-<p style="margin: 0; color: #3B4A5E; font-size: 15px">Pour lancer une marque ou la repositionner : de la plateforme de marque jusqu'aux visuels de campagne.</p>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px">
-<li style="display: flex; gap: 10px"><span style="color: #B04F00">✓</span>Plateforme de marque &amp; Big Idea</li>
-<li style="display: flex; gap: 10px"><span style="color: #B04F00">✓</span>Identité visuelle &amp; key visuals</li>
-<li style="display: flex; gap: 10px"><span style="color: #B04F00">✓</span>Plan de lancement &amp; plan média</li>
-</ul>
-<div style="margin-top: auto; padding-top: 18px; border-top: 1px solid #E2DDD3; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px"><span style="font-size: 14px; font-weight: 500; color: #3B4A5E">dès </span>[Prix] <span style="font-size: 14px; font-weight: 500; color: #3B4A5E">FCFA</span></span>
-<a href="#contact" data-offer="3" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; background: #0A1628; color: #F4F1EA; font-size: 14px; font-weight: 600; text-decoration: none">Lancer mon projet</a>
-</div>
-</article>
-
-<article class="lift" style="padding: 32px; border-radius: 24px; background: #10213A; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; gap: 18px">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><span style="font-size: 13px; color: #A9B6C8">Engagement 3 mois minimum</span></div>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em; line-height: 1.1">Direction marketing externalisée</h3>
-<p style="margin: 0; color: #C9D3E0; font-size: 15px">Un responsable marketing à vos côtés chaque mois, sans le coût d'un recrutement à temps plein.</p>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px">
-<li style="display: flex; gap: 10px"><span style="color: var(--accent)">✓</span>Stratégie &amp; calendrier éditorial</li>
-<li style="display: flex; gap: 10px"><span style="color: var(--accent)">✓</span>Coordination de l'équipe créative</li>
-<li style="display: flex; gap: 10px"><span style="color: var(--accent)">✓</span>Meta Ads, Google Display &amp; reporting KPI</li>
-</ul>
-<div style="margin-top: auto; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.12); display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px">[Prix] <span style="font-size: 14px; font-weight: 500; color: #A9B6C8">FCFA / mois</span></span>
-<a href="#contact" data-offer="4" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--accent); color: #F4F1EA; font-size: 14px; font-weight: 600; text-decoration: none">En discuter</a>
-</div>
-</article>
-
-<article class="lift" style="padding: 32px; border-radius: 24px; background: #10213A; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; gap: 18px">
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px"><span style="font-size: 13px; color: #A9B6C8">Demi-journée ou journée</span></div>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em; line-height: 1.1">Formations &amp; ateliers d'équipe</h3>
-<p style="margin: 0; color: #C9D3E0; font-size: 15px">Faire monter vos équipes en compétence : stratégie de contenu, Meta Ads, création de reels, IA pour le marketing.</p>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 15px">
-<li style="display: flex; gap: 10px"><span style="color: var(--accent)">✓</span>Programme adapté à votre secteur</li>
-<li style="display: flex; gap: 10px"><span style="color: var(--accent)">✓</span>Cas pratiques sur vos propres comptes</li>
-<li style="display: flex; gap: 10px"><span style="color: var(--accent)">✓</span>Supports remis aux participants</li>
-</ul>
-<div style="margin-top: auto; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.12); display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px">Sur devis</span>
-<a href="#contact" data-offer="5" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--accent); color: #F4F1EA; font-size: 14px; font-weight: 600; text-decoration: none">Demander un devis</a>
-</div>
-</article>
-
-<article style="padding: 32px; border-radius: 24px; border: 1.5px dashed rgba(255,255,255,0.25); display: flex; flex-direction: column; gap: 14px; justify-content: center">
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em; line-height: 1.1">Un besoin différent ?</h3>
-<p style="margin: 0; color: #C9D3E0; font-size: 15px">Campagne ponctuelle, couverture d'événement, site web, mission à l'international : décrivez-moi votre projet.</p>
-<a href="#contact" data-offer="6" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-weight: 600; text-decoration: none">Parlons-en
-<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
-</article>
-
-</div>
+    <div class="grid g3">
+      <article class="card tilt">
+        <span class="mono">1 h 30 · en ligne ou à Abidjan</span>
+        <h3 class="h3">Séance stratégique 1:1</h3>
+        <p>Un atelier de travail sur un sujet précis : positionnement, plan de com, Meta Ads, calendrier éditorial ou personal branding.</p>
+        <ul class="ticks"><li>Préparation sur questionnaire</li><li>Compte rendu &amp; plan d'action écrit</li><li>Suivi par message pendant 7 jours</li></ul>
+        <div class="foot"><span class="price">[Prix] <small>FCFA</small></span><a href="#contact" class="btn btn-g btn-sm" data-offer="1">Réserver</a></div>
+      </article>
+      <article class="card tilt">
+        <span class="mono">Livré en 10 jours · rapport PDF</span>
+        <h3 class="h3">Audit de marque &amp; communication</h3>
+        <p>Diagnostic complet de votre image, de vos réseaux sociaux et de vos campagnes, avec un plan d'action priorisé.</p>
+        <ul class="ticks"><li>Analyse de la concurrence</li><li>Audit réseaux sociaux &amp; publicités</li><li>Restitution en séance de 1 h</li></ul>
+        <div class="foot"><span class="price">[Prix] <small>FCFA</small></span><a href="#contact" class="btn btn-g btn-sm" data-offer="2">Demander un audit</a></div>
+      </article>
+      <article class="card card-light tilt">
+        <div style="display:flex;justify-content:space-between;gap:12px;align-items:center"><span class="mono" style="color:#4A505C">4 à 8 semaines</span><span class="pill" style="background:var(--ink);color:var(--accent)">Le plus demandé</span></div>
+        <h3 class="h3">Pack Lancement / Rebranding</h3>
+        <p>Pour lancer une marque ou la repositionner : de la plateforme de marque jusqu'aux visuels de campagne.</p>
+        <ul class="ticks"><li>Plateforme de marque &amp; Big Idea</li><li>Identité visuelle &amp; key visuals</li><li>Plan de lancement &amp; plan média</li></ul>
+        <div class="foot"><span class="price"><small>dès </small>[Prix] <small>FCFA</small></span><a href="#contact" class="btn btn-d btn-sm" data-offer="3">Lancer mon projet</a></div>
+      </article>
+      <article class="card tilt">
+        <span class="mono">Engagement 3 mois minimum</span>
+        <h3 class="h3">Direction marketing externalisée</h3>
+        <p>Un responsable marketing à vos côtés chaque mois, sans le coût d'un recrutement à temps plein.</p>
+        <ul class="ticks"><li>Stratégie &amp; calendrier éditorial</li><li>Coordination de l'équipe créative</li><li>Meta Ads, Google Display &amp; reporting KPI</li></ul>
+        <div class="foot"><span class="price">[Prix] <small>FCFA / mois</small></span><a href="#contact" class="btn btn-g btn-sm" data-offer="4">En discuter</a></div>
+      </article>
+      <article class="card tilt">
+        <span class="mono">Demi-journée ou journée</span>
+        <h3 class="h3">Formations &amp; ateliers d'équipe</h3>
+        <p>Faire monter vos équipes en compétence : stratégie de contenu, Meta Ads, création de reels, IA pour le marketing.</p>
+        <ul class="ticks"><li>Programme adapté à votre secteur</li><li>Cas pratiques sur vos comptes</li><li>Supports remis aux participants</li></ul>
+        <div class="foot"><span class="price">Sur devis</span><a href="#contact" class="btn btn-g btn-sm" data-offer="5">Demander un devis</a></div>
+      </article>
+      <article class="card card-dash">
+        <h3 class="h3">Un besoin différent ?</h3>
+        <p>Campagne ponctuelle, couverture d'événement, site web, mission à l'international : décrivez-nous votre projet.</p>
+        <a href="#contact" class="btn btn-p btn-sm" data-offer="6" style="align-self:flex-start">Parlons-en</a>
+      </article>
+    </div>
+  </div>
 </section>
 
-<!-- A PROPOS -->
-<section id="apropos" style="max-width: 1240px; margin: 0 auto; padding: 120px 32px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
-<div style="flex: 1 1 340px; min-width: 0; display: flex; gap: 16px">
-<div style="flex: 1 1 0; border-radius: 24px; overflow: hidden; aspect-ratio: 2 / 3">
-<img src="assets/img/walk.jpg" alt="Jean Bedel en blazer clair, en marche devant une colonnade" style="width: 100%; height: 100%; object-fit: cover; display: block">
-</div>
-<div style="flex: 1 1 0; display: flex; flex-direction: column; gap: 16px; padding-top: 56px">
-<div style="border-radius: 24px; overflow: hidden; aspect-ratio: 1 / 1">
-<img src="assets/img/team.jpg" alt="Séance de travail avec l'équipe autour des ordinateurs" style="width: 100%; height: 100%; object-fit: cover; display: block">
-</div>
-<div style="border-radius: 24px; padding: 22px; background: var(--accent); color: #0A1628; display: flex; flex-direction: column; gap: 4px">
-<span style="font-family: 'Instrument Serif', serif; font-style: italic; font-size: 28px; line-height: 1.1">« Une marque se construit, elle ne s'improvise pas. »</span>
-</div>
-</div>
-</div>
-<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent)">À propos</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 64px); line-height: 1.02; letter-spacing: -0.035em">Abidjan, Monrovia, Lomé, <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: var(--accent)">Dakar.</span></h2>
-<p style="margin: 0; font-size: 18px; color: #C9D3E0">Depuis plus de 5 ans, je conçois et déploie des stratégies de communication, je développe des marques et je pilote des campagnes digitales et terrain pour des organisations, des entreprises du BTP, des marques beauté, des artistes et des événements de 30 000 personnes.</p>
-<p style="margin: 0; font-size: 18px; color: #C9D3E0">Ma conviction : la créativité n'a de valeur que si elle sert un objectif. Je relie toujours la Big Idea au plan média, et le contenu aux KPI.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 10px">
-<span style="padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); font-size: 14px">Stratégie marketing</span>
-<span style="padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); font-size: 14px">Branding</span>
-<span style="padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); font-size: 14px">Communication 360°</span>
-<span style="padding: 8px 14px; border-radius: 999px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); font-size: 14px">Growth &amp; Performance</span>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; padding-top: 8px">
-<a href="#parcours" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.22); color: #F4F1EA; font-weight: 600; text-decoration: none">Mon parcours</a>
-<a href="#contact" style="display: inline-flex; align-items: center; gap: 8px; min-height: 48px; font-weight: 600; text-decoration: none">
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"></path></svg>
-Télécharger mon CV</a>
-</div>
-</div>
+<!-- RÉALISATIONS -->
+<section id="realisations" class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="tag">Études de cas</span>
+        <h2 class="h2">Des résultats, <span class="it">pas des promesses.</span></h2>
+      </div>
+      <p>Quatre missions qui résument notre façon de travailler : comprendre, positionner, créer, mesurer.</p>
+    </div>
+
+    <article class="case grow">
+      <div class="case-img"><img src="assets/img/mve.jpg" alt="Équipe Messages de Vie lors d'un événement" class="par"></div>
+      <div class="case-body">
+        <span class="mono">Messages de Vie · Depuis 2021 · Head Marketing &amp; Com Digital</span>
+        <h3>Stratégie digitale &amp; growth : plus d'1 million de vues par mois sur Meta.</h3>
+        <p class="muted" style="margin:0">Plans de communication marketing &amp; digitale, rubriques éditoriales, émissions et formats de contenus, campagnes internationales au Liberia, Togo, Bénin, Soudan du Sud et Sénégal.</p>
+        <div class="kpis">
+          <div><b>1M+</b><span>vues / mois</span></div>
+          <div><b>6</b><span>pays couverts</span></div>
+          <div><b>[X]%</b><span>croissance communauté</span></div>
+        </div>
+      </div>
+    </article>
+
+    <div class="grid g3">
+      <article class="ccard tilt">
+        <div class="ccard-media"><img src="assets/img/event.jpg" alt="Conférence de Pentecôte" class="par"></div>
+        <div class="ccard-body">
+          <span class="mono">Conférences de Pentecôte · 2023–2026</span>
+          <h3 class="h3">30 000 participants en 4 jours au Parc des Expositions d'Abidjan</h3>
+          <p>Stratégie digitale, plan de communication, leviers d'activation et direction de l'équipe créative.</p>
+        </div>
+      </article>
+      <article class="ccard tilt">
+        <div class="ccard-media"><div class="ph" style="background:var(--accent);color:var(--ink)">[Key visual<br>Strauss]</div></div>
+        <div class="ccard-body">
+          <span class="mono">Strauss Construction · 2025</span>
+          <h3 class="h3">Stratégie 360° sur 12 mois et refonte de l'identité de marque</h3>
+          <p>Big Idea, copy strategy, signatures, plan média, key visuals, site marchand et budget annuel.</p>
+        </div>
+      </article>
+      <article class="ccard tilt">
+        <div class="ccard-media"><div class="ph" style="background:#14171E;color:var(--accent);border-bottom:1px solid var(--line)">[Visuel<br>CINergie]</div></div>
+        <div class="ccard-body">
+          <span class="mono">CINergie CI · 2023–2024</span>
+          <h3 class="h3">Identité, territoire visuel et lancement de l'app My CINergie</h3>
+          <p>Stratégie 360°, plan média, mockups de l'application et déclinaison des key visuals.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="cta-band" style="margin-top:40px">
+      <div><b>Vous voulez des résultats comparables pour votre marque ?</b><span class="muted">Parlons de vos objectifs pendant 30 minutes, gratuitement.</span></div>
+      <a href="#contact" class="btn btn-p magnet" data-offer="0">Réserver ma séance offerte</a>
+    </div>
+  </div>
 </section>
 
-<!-- EXPERTISES -->
-<section id="expertises" style="background: #F4F1EA; color: #0A1628">
-<div style="max-width: 1240px; margin: 0 auto; padding: 120px 32px; display: flex; flex-direction: column; gap: 56px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 680px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #B04F00">Ce que je fais</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 64px); line-height: 1.02; letter-spacing: -0.035em">Quatre expertises, <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400">une seule marque.</span></h2>
-</div>
-<p style="margin: 0; max-width: 380px; color: #3B4A5E">De la plateforme de marque au reporting de campagne : un même fil conducteur, une même exigence de cohérence.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
-<article class="lift" style="padding: 32px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E2DDD3; display: flex; flex-direction: column; gap: 16px; min-height: 340px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 15px; color: #B04F00">01</span>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em; line-height: 1.1">Stratégie marketing</h3>
-<p style="margin: 0; color: #3B4A5E; font-size: 15px">Plans marketing et communication, positionnement, stratégie éditoriale, plan média.</p>
-<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #E2DDD3; font-size: 13px; color: #3B4A5E">Big Idea · Copy Strategy · Plan média</div>
-</article>
-<article class="lift" style="padding: 32px; border-radius: 24px; background: #0A1628; color: #F4F1EA; display: flex; flex-direction: column; gap: 16px; min-height: 340px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 15px; color: var(--accent)">02</span>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em; line-height: 1.1">Branding &amp; identité</h3>
-<p style="margin: 0; color: #C9D3E0; font-size: 15px">Identité visuelle, territoire de marque, refonte, key visuals et personal branding.</p>
-<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.14); font-size: 13px; color: #A9B6C8">Plateforme · Rebranding · Key visuals</div>
-</article>
-<article class="lift" style="padding: 32px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E2DDD3; display: flex; flex-direction: column; gap: 16px; min-height: 340px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 15px; color: #B04F00">03</span>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em; line-height: 1.1">Communication 360°</h3>
-<p style="margin: 0; color: #3B4A5E; font-size: 15px">Campagnes institutionnelles et internationales : radio, print, digital, événementiel.</p>
-<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #E2DDD3; font-size: 13px; color: #3B4A5E">Print · Radio · Événementiel · Digital</div>
-</article>
-<article class="lift" style="padding: 32px; border-radius: 24px; background: var(--accent); color: #0A1628; display: flex; flex-direction: column; gap: 16px; min-height: 340px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 15px">04</span>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em; line-height: 1.1">Digital &amp; performance</h3>
-<p style="margin: 0; font-size: 15px">Meta Ads, Google Display, acquisition, suivi des KPI et optimisation des contenus.</p>
-<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid rgba(10,22,40,0.2); font-size: 13px">Portée · Vues · Engagement · Croissance</div>
-</article>
-</div>
-</div>
+<!-- POURQUOI -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="tag">Pourquoi JBN Studio</span>
+        <h2 class="h2">Ce que vous gagnez <span class="it">à travailler avec nous.</span></h2>
+      </div>
+      <a href="#contact" class="btn btn-g magnet" data-offer="0">Réserver ma séance offerte</a>
+    </div>
+    <div class="why">
+      <div><b>01</b><h3 class="h3">Des résultats mesurés</h3><p>Chaque action a un KPI : portée, vues, engagement, demandes. Vous savez ce que rapporte votre budget.</p></div>
+      <div><b>02</b><h3 class="h3">L'expérience du terrain</h3><p>Des campagnes dans 6 pays et des événements de 30 000 personnes : nous savons ce qui marche en Afrique.</p></div>
+      <div><b>03</b><h3 class="h3">Une équipe créative</h3><p>Photographes, reel makers, monteurs, graphistes : les bons talents réunis pour votre projet.</p></div>
+      <div><b>04</b><h3 class="h3">Un seul interlocuteur</h3><p>De la stratégie à la mise en ligne, vous parlez au fondateur. Pas d'intermédiaire, pas de perte d'info.</p></div>
+    </div>
+  </div>
 </section>
 
-<!-- REALISATIONS / CAS -->
-<section id="realisations" style="max-width: 1240px; margin: 0 auto; padding: 120px 32px; display: flex; flex-direction: column; gap: 56px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 680px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent)">Études de cas</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 64px); line-height: 1.02; letter-spacing: -0.035em">Des résultats, <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: var(--accent)">pas des promesses.</span></h2>
-</div>
-<p style="margin: 0; max-width: 380px; color: #A9B6C8">Quatre missions qui résument ma façon de travailler : comprendre, positionner, créer, mesurer.</p>
-</div>
-
-<article style="display: flex; flex-wrap: wrap; border-radius: 28px; overflow: hidden; background: #10213A; border: 1px solid rgba(255,255,255,0.08)">
-<div style="flex: 1 1 420px; min-width: 0; min-height: 380px; position: relative">
-<img src="assets/img/mve.jpg" alt="Équipe Messages de Vie lors d'un événement" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block">
-</div>
-<div style="flex: 999 1 460px; min-width: 0; padding: 48px; display: flex; flex-direction: column; gap: 20px">
-<div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; color: #A9B6C8"><span>Messages de Vie</span><span aria-hidden="true">·</span><span>Depuis 2021</span><span aria-hidden="true">·</span><span>Head Marketing &amp; Communication Digital</span></div>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 36px; letter-spacing: -0.025em; line-height: 1.05">Stratégie digitale &amp; growth : plus d'1 million de vues par mois sur Meta.</h3>
-<p style="margin: 0; color: #C9D3E0">Plans de communication marketing &amp; digitale, rubriques éditoriales, émissions et formats de contenus, campagnes internationales au Liberia, Togo, Bénin, Soudan du Sud et Sénégal — radio, 360° et digital.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.1); margin-top: auto">
-<div style="display: flex; flex-direction: column"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 32px; color: var(--accent)">1M+</span><span style="font-size: 13px; color: #A9B6C8">vues / mois</span></div>
-<div style="display: flex; flex-direction: column"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 32px; color: var(--accent)">6</span><span style="font-size: 13px; color: #A9B6C8">pays couverts</span></div>
-<div style="display: flex; flex-direction: column"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 32px; color: var(--accent)">[X]%</span><span style="font-size: 13px; color: #A9B6C8">croissance communauté</span></div>
-</div>
-</div>
-</article>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px">
-<article class="lift" style="border-radius: 24px; overflow: hidden; background: #10213A; border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column">
-<div style="aspect-ratio: 16 / 10; overflow: hidden"><img src="assets/img/event.jpg" alt="Événement de la Conférence de Pentecôte" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
-<div style="padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<span style="font-size: 13px; color: #A9B6C8">Conférences de Pentecôte · 2023–2026</span>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em; line-height: 1.15">30 000 participants en 4 jours au Parc des Expositions d'Abidjan</h3>
-<p style="margin: 0; color: #C9D3E0; font-size: 15px">Stratégie digitale, plan de communication, leviers d'activation et direction de l'équipe créative.</p>
-</div>
-</article>
-<article class="lift" style="border-radius: 24px; overflow: hidden; background: #F4F1EA; color: #0A1628; display: flex; flex-direction: column">
-<div style="aspect-ratio: 16 / 10; background: var(--accent); display: flex; align-items: center; justify-content: center; padding: 24px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.04em; text-align: center; line-height: 0.95; color: #0A1628">[Key visual<br>Strauss]</span>
-</div>
-<div style="padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<span style="font-size: 13px; color: #3B4A5E">Strauss Construction · 2025</span>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em; line-height: 1.15">Stratégie 360° sur 12 mois et refonte de l'identité de marque</h3>
-<p style="margin: 0; color: #3B4A5E; font-size: 15px">Big Idea, copy strategy, signatures, plan média, key visuals, site marchand et budget annuel.</p>
-</div>
-</article>
-<article class="lift" style="border-radius: 24px; overflow: hidden; background: #10213A; border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column">
-<div style="aspect-ratio: 16 / 10; background: #1B3A5C; display: flex; align-items: center; justify-content: center; padding: 24px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.04em; text-align: center; line-height: 0.95; color: #7CC4E4">[Visuel<br>CINergie]</span>
-</div>
-<div style="padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<span style="font-size: 13px; color: #A9B6C8">CINergie CI · 2023–2024</span>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em; line-height: 1.15">Identité, territoire visuel et lancement de l'app My CINergie</h3>
-<p style="margin: 0; color: #C9D3E0; font-size: 15px">Stratégie 360°, plan média, mockups de l'application et déclinaison des key visuals.</p>
-</div>
-</article>
-</div>
+<!-- MÉTHODE (défilement horizontal) -->
+<section class="method" aria-label="Notre méthode">
+  <div class="method-pin" style="padding:clamp(60px,8vw,100px) 0">
+    <div class="method-track">
+      <div class="step-intro">
+        <span class="tag">La méthode</span>
+        <h2 class="h2">De l'objectif <span class="it">au résultat.</span></h2>
+        <p class="muted" style="margin:0">Chaque étape est visible et documentée : vous savez ce qui est fait, ce qui reste, et pourquoi.</p>
+      </div>
+      <div class="step"><span class="step-n">01</span><h3>Diagnostiquer</h3><p>Marché, cibles, concurrence, image actuelle de la marque.</p></div>
+      <div class="step"><span class="step-n">02</span><h3>Positionner</h3><p>Plateforme de marque, Big Idea, copy strategy et plan média.</p></div>
+      <div class="step"><span class="step-n">03</span><h3>Créer &amp; déployer</h3><p>Key visuals, contenus, campagnes — avec photographes, reel makers, monteurs et graphistes.</p></div>
+      <div class="step"><span class="step-n">04</span><h3>Mesurer &amp; optimiser</h3><p>Portée, vues, engagement, croissance : on ajuste selon les chiffres.</p></div>
+    </div>
+  </div>
 </section>
 
-<!-- CTA BAND -->
-<section style="max-width: 1240px; margin: 0 auto; padding: 0 32px 112px">
-<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between; padding: 36px 40px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.14); background: #10213A">
-<div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 28px; letter-spacing: -0.02em; line-height: 1.15">Vous voulez des résultats comparables pour votre marque ?</span>
-<span style="color: #A9B6C8">Parlons de vos objectifs pendant 30 minutes, gratuitement.</span>
-</div>
-<a href="#contact" data-offer="0" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 26px; border-radius: 999px; background: var(--accent); color: #0A1628; font-weight: 600; text-decoration: none">Réserver ma séance offerte</a>
-</div>
+<!-- VIDÉOS -->
+<section id="videos" class="sec" style="background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="tag">La chaîne YouTube</span>
+        <h2 class="h2">On partage, <span class="it">en vidéo.</span></h2>
+      </div>
+      <a href="#videos" class="btn btn-p magnet">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg>
+        S'abonner à la chaîne</a>
+    </div>
+    <div class="video-wrap">
+      <div class="video-main">
+        <div class="video-frame">
+          <img data-feat-src src="assets/img/event.jpg" alt="">
+          <a href="#videos" data-feat-href class="play" aria-label="Lire la vidéo sur YouTube"><svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></a>
+          <span class="vbadge" style="left:16px;top:16px" data-feat="tag"></span>
+          <span class="vbadge" style="right:16px;bottom:16px" data-feat="duration"></span>
+        </div>
+        <h3 class="h3" data-feat="title"></h3>
+        <p class="muted" style="margin:0" data-feat="desc"></p>
+      </div>
+      <div class="video-list">
+        <span class="mono">Toutes les vidéos</span>
+        <div id="video-list" style="display:contents"></div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- POURQUOI MOI -->
-<section style="max-width: 1240px; margin: 0 auto; padding: 0 32px 120px; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 700px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent)">Pourquoi me choisir</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 64px); line-height: 1.02; letter-spacing: -0.035em">Ce que vous gagnez <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: var(--accent)">à travailler avec moi.</span></h2>
-</div>
-<a href="#contact" data-offer="0" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; border-radius: 999px; border: 1px solid var(--accent); color: #F4F1EA; font-weight: 600; text-decoration: none">Réserver ma séance offerte</a>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1px; background: rgba(255,255,255,0.12); border-radius: 24px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12)">
-<div style="padding: 32px; background: #0A1628; display: flex; flex-direction: column; gap: 12px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 44px; line-height: 1; color: var(--accent)">01</span>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px">Des résultats mesurés</h3>
-<p style="margin: 0; color: #A9B6C8; font-size: 15px">Chaque action a un KPI : portée, vues, engagement, demandes. Vous savez ce que rapporte votre budget.</p>
-</div>
-<div style="padding: 32px; background: #0A1628; display: flex; flex-direction: column; gap: 12px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 44px; line-height: 1; color: var(--accent)">02</span>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px">L'expérience du terrain</h3>
-<p style="margin: 0; color: #A9B6C8; font-size: 15px">Des campagnes menées dans 6 pays et des événements de 30 000 personnes : je sais ce qui marche en Afrique.</p>
-</div>
-<div style="padding: 32px; background: #0A1628; display: flex; flex-direction: column; gap: 12px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 44px; line-height: 1; color: var(--accent)">03</span>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px">Une équipe créative coordonnée</h3>
-<p style="margin: 0; color: #A9B6C8; font-size: 15px">Photographes, reel makers, monteurs, graphistes : je réunis les bons talents pour votre projet.</p>
-</div>
-<div style="padding: 32px; background: #0A1628; display: flex; flex-direction: column; gap: 12px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 44px; line-height: 1; color: var(--accent)">04</span>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px">Un seul interlocuteur</h3>
-<p style="margin: 0; color: #A9B6C8; font-size: 15px">De la stratégie à la mise en ligne, vous parlez à la même personne. Pas d'intermédiaire, pas de perte d'info.</p>
-</div>
-</div>
+<!-- CRÉATIONS -->
+<section id="creations" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="tag">Créations visuelles</span>
+        <h2 class="h2">L'image, <span class="it">au service du message.</span></h2>
+      </div>
+      <p>Key visuals, identités, reels, carrousels et dispositifs terrain — conçus avec Photoshop, Illustrator, After Effects et Premiere Pro.</p>
+    </div>
+    <div class="chips" role="group" aria-label="Filtrer les créations" id="filters"></div>
+    <div class="gallery" id="gallery"></div>
+  </div>
 </section>
 
-<!-- METHODE -->
-<section style="border-top: 1px solid rgba(255,255,255,0.08)">
-<div style="max-width: 1240px; margin: 0 auto; padding: 112px 32px; display: flex; flex-wrap: wrap; gap: 56px">
-<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent)">Ma méthode</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(36px, 4.4vw, 56px); line-height: 1.02; letter-spacing: -0.035em">De l'objectif au résultat, <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400">en quatre temps.</span></h2>
-<p style="margin: 0; color: #A9B6C8">Chaque étape est visible et documentée : vous savez ce qui est fait, ce qui reste, et pourquoi.</p>
-</div>
-<ol style="flex: 999 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
-<li style="display: flex; gap: 28px; padding: 26px 0; border-top: 1px solid rgba(255,255,255,0.12)">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px; color: var(--accent); min-width: 36px">01</span>
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px">Diagnostiquer</span><span style="color: #A9B6C8">Marché, cibles, concurrence, image actuelle de la marque.</span></div>
-</li>
-<li style="display: flex; gap: 28px; padding: 26px 0; border-top: 1px solid rgba(255,255,255,0.12)">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px; color: var(--accent); min-width: 36px">02</span>
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px">Positionner</span><span style="color: #A9B6C8">Plateforme de marque, Big Idea, copy strategy et plan média.</span></div>
-</li>
-<li style="display: flex; gap: 28px; padding: 26px 0; border-top: 1px solid rgba(255,255,255,0.12)">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px; color: var(--accent); min-width: 36px">03</span>
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px">Créer &amp; déployer</span><span style="color: #A9B6C8">Key visuals, contenus, campagnes — avec photographes, reel makers, monteurs et graphistes.</span></div>
-</li>
-<li style="display: flex; gap: 28px; padding: 26px 0; border-top: 1px solid rgba(255,255,255,0.12); border-bottom: 1px solid rgba(255,255,255,0.12)">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px; color: var(--accent); min-width: 36px">04</span>
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 24px">Mesurer &amp; optimiser</span><span style="color: #A9B6C8">Portée, vues, engagement, croissance : on ajuste selon les chiffres.</span></div>
-</li>
-</ol>
-</div>
+<!-- STRATÉGIES -->
+<section id="strategies" class="sec light">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="tag">Documents stratégiques</span>
+        <h2 class="h2">La pensée <span class="it">derrière l'image.</span></h2>
+      </div>
+      <p>Extraits de plans de communication, plateformes de marque et plans média. Les données confidentielles des clients sont masquées.</p>
+    </div>
+    <div class="grid g3">
+      <article class="doc"><div class="doc-top"><span class="doc-file">PDF</span><span class="pill" style="background:#FFE3CC;color:#8A3D00">Stratégie 360°</span></div><div><h3>Stratégie de communication 360° — 12 mois</h3><span class="sub">Strauss Construction · Big Idea, copy strategy, signatures, plan média, budget annuel</span></div><div class="foot"><span>2025 · [nb] pages</span><a href="#strategies" class="btn btn-d btn-sm">Consulter ↗</a></div></article>
+      <article class="doc"><div class="doc-top"><span class="doc-file">PDF</span><span class="pill" style="background:#DCEFF8;color:#0B4F6C">Événementiel</span></div><div><h3>Plan de communication &amp; dispositif d'activation</h3><span class="sub">Conférence de Pentecôte 2026 · leviers d'activation, plan de support COM</span></div><div class="foot"><span>2026 · [nb] pages</span><a href="#strategies" class="btn btn-d btn-sm">Consulter ↗</a></div></article>
+      <article class="doc"><div class="doc-top"><span class="doc-file">PDF</span><span class="pill" style="background:#E3E7FB;color:#2F3A8F">Digital &amp; growth</span></div><div><h3>Stratégie digitale &amp; growth éditorial</h3><span class="sub">Messages de Vie · rubriques, formats, suivi des KPI digitaux</span></div><div class="foot"><span>[Année] · [nb] pages</span><a href="#strategies" class="btn btn-d btn-sm">Consulter ↗</a></div></article>
+      <article class="doc"><div class="doc-top"><span class="doc-file">PDF</span><span class="pill" style="background:#FFE3CC;color:#8A3D00">Plan média</span></div><div><h3>Stratégie 360°, plan média &amp; budget de campagne</h3><span class="sub">CINergie CI · territoire visuel, lancement de l'app My CINergie</span></div><div class="foot"><span>2023–2024 · [nb] pages</span><a href="#strategies" class="btn btn-d btn-sm">Consulter ↗</a></div></article>
+      <article class="doc"><div class="doc-top"><span class="doc-file">PDF</span><span class="pill" style="background:#DCEFF8;color:#0B4F6C">Rebranding</span></div><div><h3>Stratégie marketing, éditoriale &amp; rebranding</h3><span class="sub">Fondation du Droit pour les Générations Futures (FDGF)</span></div><div class="foot"><span>[Année] · [nb] pages</span><a href="#strategies" class="btn btn-d btn-sm">Consulter ↗</a></div></article>
+      <article class="doc"><div class="doc-top"><span class="doc-file">PDF</span><span class="pill" style="background:#E3E7FB;color:#2F3A8F">Personal branding</span></div><div><h3>Positionnement digital &amp; marketing d'influence</h3><span class="sub">Deri Jess, artiste gospel · streaming, influence, personal branding</span></div><div class="foot"><span>[Année] · [nb] pages</span><a href="#strategies" class="btn btn-d btn-sm">Consulter ↗</a></div></article>
+    </div>
+
+    <div class="lm">
+      <div class="lm-cover"><small>MODÈLE GRATUIT</small><b>Plan de com 360°</b></div>
+      <div style="flex:999 1 360px;min-width:0;display:flex;flex-direction:column;gap:8px">
+        <b style="font-family:var(--display);font-size:clamp(20px,2.2vw,28px);letter-spacing:-.025em;line-height:1.15">Recevez notre modèle de plan de communication</b>
+        <span class="muted">La trame utilisée avec nos clients : objectifs, cibles, Big Idea, plan média, KPI. Gratuit, par email.</span>
+      </div>
+      <form aria-label="Recevoir le modèle gratuit">
+        <label for="lm-email" class="sr">Votre email</label>
+        <input id="lm-email" class="field" type="email" placeholder="votre@email.com">
+        <button type="submit" class="btn btn-p">Je le veux</button>
+      </form>
+    </div>
+  </div>
 </section>
 
-<!-- VIDEOS -->
-<section id="videos" style="background: #0F1E33; border-top: 1px solid rgba(255,255,255,0.06)">
-<div style="max-width: 1240px; margin: 0 auto; padding: 120px 32px; display: flex; flex-direction: column; gap: 48px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 680px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent)">Ma chaîne YouTube</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 64px); line-height: 1.02; letter-spacing: -0.035em">Je partage, <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: var(--accent)">en vidéo.</span></h2>
-</div>
-<a href="#videos" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 22px; border-radius: 999px; background: #F4F1EA; color: #0A1628; font-weight: 600; text-decoration: none">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"></rect><path d="M10 9l5 3-5 3z"></path></svg>
-S'abonner à la chaîne</a>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 24px">
-<div style="flex: 999 1 620px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
-<div style="position: relative; aspect-ratio: 16 / 9; border-radius: 24px; overflow: hidden; background: #0A1628">
-<img data-feat-src src="assets/img/event.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block; opacity: 0.55">
-<div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center">
-<a href="#videos" data-feat-href aria-label="Lire la vidéo sur YouTube" style="width: 88px; height: 88px; border-radius: 50%; background: var(--accent); color: #0A1628; display: flex; align-items: center; justify-content: center; box-shadow: 0 16px 40px rgba(0,0,0,0.4)">
-<svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"></path></svg>
-</a>
-</div>
-<span style="position: absolute; right: 16px; bottom: 16px; padding: 4px 10px; border-radius: 8px; background: rgba(10,22,40,0.85); font-size: 13px; font-weight: 600"><span data-feat="duration"></span></span>
-<span style="position: absolute; left: 16px; top: 16px; padding: 6px 12px; border-radius: 999px; background: rgba(10,22,40,0.85); font-size: 12px; font-weight: 600; letter-spacing: 0.04em"><span data-feat="tag"></span></span>
-</div>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 28px; letter-spacing: -0.02em; line-height: 1.15"><span data-feat="title"></span></h3>
-<p style="margin: 0; color: #A9B6C8"><span data-feat="desc"></span></p>
-</div>
-<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<span style="font-size: 13px; font-weight: 600; color: #A9B6C8; letter-spacing: 0.06em; text-transform: uppercase">Toutes les vidéos</span>
-<div id="video-list" style="display: contents"></div>
-</div>
-</div>
-</div>
+<!-- ACTUALITÉS -->
+<section id="actualites" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="tag">Actualités</span>
+        <h2 class="h2">Ce qui bouge <span class="it">en ce moment.</span></h2>
+      </div>
+      <p>Missions, événements, formations : les dernières nouvelles du studio.</p>
+    </div>
+    <div class="grid g3">
+      <article class="ccard tilt">
+        <div class="ccard-media"><img src="assets/img/event.jpg" alt="Conférence de Pentecôte 2026" class="par"></div>
+        <div class="ccard-body">
+          <div class="news-meta"><span class="pill pill-a">Événement</span><span class="mono">Mai 2026</span></div>
+          <h3 class="h3">Conférence de Pentecôte 2026 : 30 000 participants au Parc des Expositions</h3>
+          <p>Pilotage de la stratégie digitale et de l'équipe communication sur 4 jours.</p>
+          <a href="#actualites" class="mono" style="color:var(--accent)">Lire la suite →</a>
+        </div>
+      </article>
+      <article class="ccard tilt">
+        <div class="ccard-media"><img src="assets/img/senegal.jpg" alt="Mission de communication au Sénégal" class="par"></div>
+        <div class="ccard-body">
+          <div class="news-meta"><span class="pill" style="background:#4FB3D9;color:var(--ink)">International</span><span class="mono">[Date]</span></div>
+          <h3 class="h3">Campagne de communication au Sénégal</h3>
+          <p>Déploiement radio, 360° et digital pour Messages de Vie, après le Liberia, le Togo, le Bénin et le Soudan du Sud.</p>
+          <a href="#actualites" class="mono" style="color:var(--accent)">Lire la suite →</a>
+        </div>
+      </article>
+      <article class="ccard tilt">
+        <div class="ccard-media"><img src="assets/img/grad.jpg" alt="Remise de diplôme" class="par"></div>
+        <div class="ccard-body">
+          <div class="news-meta"><span class="pill" style="background:var(--paper);color:var(--ink)">Formation</span><span class="mono">[Date]</span></div>
+          <h3 class="h3">Master avancé en Marketing opérationnel</h3>
+          <p>Nouveau diplôme du fondateur, plus la certification Expert Marketing opérationnel de la Claude AI Academy.</p>
+          <a href="#actualites" class="mono" style="color:var(--accent)">Lire la suite →</a>
+        </div>
+      </article>
+    </div>
+  </div>
 </section>
 
-<!-- CREATIONS -->
-<section id="creations" style="max-width: 1240px; margin: 0 auto; padding: 120px 32px; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 680px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent)">Créations visuelles</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 64px); line-height: 1.02; letter-spacing: -0.035em">L'image, <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: var(--accent)">au service du message.</span></h2>
-</div>
-<p style="margin: 0; max-width: 380px; color: #A9B6C8">Key visuals, identités, contenus sociaux et dispositifs terrain — conçus avec Photoshop, Illustrator, After Effects et Premiere Pro.</p>
-</div>
-<div role="group" aria-label="Filtrer les créations" style="display: flex; flex-wrap: wrap; gap: 10px">
-<div id="filters" style="display: contents"></div>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; align-items: start">
-<div id="gallery" style="display: contents"></div>
-</div>
+<!-- TÉMOIGNAGES -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="tag">Ils en parlent</span>
+        <h2 class="h2">La confiance, <span class="it">ça se prouve.</span></h2>
+      </div>
+    </div>
+    <div class="grid g3">
+      <figure class="card" style="margin:0"><span class="quote" aria-hidden="true">“</span><blockquote>[Témoignage à recueillir : le résultat obtenu et comment s'est passée la collaboration.]</blockquote><figcaption class="foot"><span><b>[Nom], [Poste]</b><br><span class="muted">Strauss Construction</span></span></figcaption></figure>
+      <figure class="card" style="margin:0"><span class="quote" aria-hidden="true">“</span><blockquote>[Témoignage à recueillir : le résultat obtenu et comment s'est passée la collaboration.]</blockquote><figcaption class="foot"><span><b>[Nom], [Poste]</b><br><span class="muted">Cure's Nappy</span></span></figcaption></figure>
+      <figure class="card" style="margin:0"><span class="quote" aria-hidden="true">“</span><blockquote>[Témoignage à recueillir : le résultat obtenu et comment s'est passée la collaboration.]</blockquote><figcaption class="foot"><span><b>[Nom], [Poste]</b><br><span class="muted">FDGF</span></span></figcaption></figure>
+    </div>
+  </div>
 </section>
 
-<!-- DOCUMENTS STRATEGIQUES -->
-<section id="strategies" style="background: #E9EEF3; color: #0A1628">
-<div style="max-width: 1240px; margin: 0 auto; padding: 120px 32px; display: flex; flex-direction: column; gap: 48px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 700px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #B04F00">Documents stratégiques</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 64px); line-height: 1.02; letter-spacing: -0.035em">La pensée <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400">derrière l'image.</span></h2>
-</div>
-<p style="margin: 0; max-width: 400px; color: #3B4A5E">Extraits de plans de communication, plateformes de marque et plans média. Les données confidentielles des clients sont masquées.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px">
-
-<article class="lift" style="padding: 28px; border-radius: 22px; background: #FFFFFF; border: 1px solid #D3DCE6; display: flex; flex-direction: column; gap: 18px">
-<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px">
-<span style="width: 52px; height: 64px; border-radius: 8px; background: #0A1628; color: var(--accent); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px; font-size: 11px; font-weight: 700; box-sizing: border-box">PDF</span>
-<span style="padding: 4px 10px; border-radius: 999px; background: #FFE7D1; color: #8A3D00; font-size: 12px; font-weight: 600">Stratégie 360°</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.015em; line-height: 1.2">Stratégie de communication 360° — 12 mois</h3>
-<span style="font-size: 14px; color: #3B4A5E">Strauss Construction · Big Idea, copy strategy, signatures, plan média, budget annuel</span>
-</div>
-<div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid #E2E8EF">
-<span style="font-size: 13px; color: #3B4A5E">2025 · [nb] pages</span>
-<a href="#strategies" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px; background: #0A1628; color: #F4F1EA; font-size: 14px; font-weight: 600; text-decoration: none">Consulter
-<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></a>
-</div>
-</article>
-
-<article class="lift" style="padding: 28px; border-radius: 22px; background: #FFFFFF; border: 1px solid #D3DCE6; display: flex; flex-direction: column; gap: 18px">
-<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px">
-<span style="width: 52px; height: 64px; border-radius: 8px; background: #0A1628; color: var(--accent); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px; font-size: 11px; font-weight: 700; box-sizing: border-box">PDF</span>
-<span style="padding: 4px 10px; border-radius: 999px; background: #DCEFF8; color: #0B4F6C; font-size: 12px; font-weight: 600">Événementiel</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.015em; line-height: 1.2">Plan de communication &amp; dispositif d'activation</h3>
-<span style="font-size: 14px; color: #3B4A5E">Conférence de Pentecôte 2026 · leviers d'activation, plan de support COM</span>
-</div>
-<div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid #E2E8EF">
-<span style="font-size: 13px; color: #3B4A5E">2026 · [nb] pages</span>
-<a href="#strategies" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px; background: #0A1628; color: #F4F1EA; font-size: 14px; font-weight: 600; text-decoration: none">Consulter
-<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></a>
-</div>
-</article>
-
-<article class="lift" style="padding: 28px; border-radius: 22px; background: #FFFFFF; border: 1px solid #D3DCE6; display: flex; flex-direction: column; gap: 18px">
-<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px">
-<span style="width: 52px; height: 64px; border-radius: 8px; background: #0A1628; color: var(--accent); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px; font-size: 11px; font-weight: 700; box-sizing: border-box">PDF</span>
-<span style="padding: 4px 10px; border-radius: 999px; background: #E3E7FB; color: #2F3A8F; font-size: 12px; font-weight: 600">Digital &amp; growth</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.015em; line-height: 1.2">Stratégie digitale &amp; growth éditorial</h3>
-<span style="font-size: 14px; color: #3B4A5E">Messages de Vie · rubriques, formats, suivi des KPI digitaux</span>
-</div>
-<div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid #E2E8EF">
-<span style="font-size: 13px; color: #3B4A5E">[Année] · [nb] pages</span>
-<a href="#strategies" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px; background: #0A1628; color: #F4F1EA; font-size: 14px; font-weight: 600; text-decoration: none">Consulter
-<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></a>
-</div>
-</article>
-
-<article class="lift" style="padding: 28px; border-radius: 22px; background: #FFFFFF; border: 1px solid #D3DCE6; display: flex; flex-direction: column; gap: 18px">
-<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px">
-<span style="width: 52px; height: 64px; border-radius: 8px; background: #0A1628; color: var(--accent); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px; font-size: 11px; font-weight: 700; box-sizing: border-box">PDF</span>
-<span style="padding: 4px 10px; border-radius: 999px; background: #FFE7D1; color: #8A3D00; font-size: 12px; font-weight: 600">Plan média</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.015em; line-height: 1.2">Stratégie 360°, plan média &amp; budget de campagne</h3>
-<span style="font-size: 14px; color: #3B4A5E">CINergie CI · territoire visuel, lancement de l'app My CINergie</span>
-</div>
-<div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid #E2E8EF">
-<span style="font-size: 13px; color: #3B4A5E">2023–2024 · [nb] pages</span>
-<a href="#strategies" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px; background: #0A1628; color: #F4F1EA; font-size: 14px; font-weight: 600; text-decoration: none">Consulter
-<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></a>
-</div>
-</article>
-
-<article class="lift" style="padding: 28px; border-radius: 22px; background: #FFFFFF; border: 1px solid #D3DCE6; display: flex; flex-direction: column; gap: 18px">
-<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px">
-<span style="width: 52px; height: 64px; border-radius: 8px; background: #0A1628; color: var(--accent); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px; font-size: 11px; font-weight: 700; box-sizing: border-box">PDF</span>
-<span style="padding: 4px 10px; border-radius: 999px; background: #DCEFF8; color: #0B4F6C; font-size: 12px; font-weight: 600">Rebranding</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.015em; line-height: 1.2">Stratégie marketing, éditoriale &amp; rebranding</h3>
-<span style="font-size: 14px; color: #3B4A5E">Fondation du Droit pour les Générations Futures (FDGF)</span>
-</div>
-<div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid #E2E8EF">
-<span style="font-size: 13px; color: #3B4A5E">[Année] · [nb] pages</span>
-<a href="#strategies" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px; background: #0A1628; color: #F4F1EA; font-size: 14px; font-weight: 600; text-decoration: none">Consulter
-<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></a>
-</div>
-</article>
-
-<article class="lift" style="padding: 28px; border-radius: 22px; background: #FFFFFF; border: 1px solid #D3DCE6; display: flex; flex-direction: column; gap: 18px">
-<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px">
-<span style="width: 52px; height: 64px; border-radius: 8px; background: #0A1628; color: var(--accent); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px; font-size: 11px; font-weight: 700; box-sizing: border-box">PDF</span>
-<span style="padding: 4px 10px; border-radius: 999px; background: #E3E7FB; color: #2F3A8F; font-size: 12px; font-weight: 600">Personal branding</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 6px">
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.015em; line-height: 1.2">Positionnement digital &amp; marketing d'influence</h3>
-<span style="font-size: 14px; color: #3B4A5E">Deri Jess, artiste gospel · streaming, influence, personal branding</span>
-</div>
-<div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid #E2E8EF">
-<span style="font-size: 13px; color: #3B4A5E">[Année] · [nb] pages</span>
-<a href="#strategies" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px; background: #0A1628; color: #F4F1EA; font-size: 14px; font-weight: 600; text-decoration: none">Consulter
-<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></a>
-</div>
-</article>
-
-</div>
-</div>
+<!-- LE STUDIO / FONDATEUR -->
+<section id="studio" class="sec" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="about">
+      <div class="about-media">
+        <div class="about-photo"><img src="assets/img/hero.jpg" alt="Jean Bedel N'Guessan, fondateur de JBN Studio" class="par"></div>
+        <div class="about-sign"><b>Jean Bedel N'Guessan</b>Fondateur · Directeur de la stratégie</div>
+      </div>
+      <div class="about-body">
+        <span class="tag">Derrière le studio</span>
+        <h2 class="h2">Un fondateur, <span class="it">un réseau de créatifs.</span></h2>
+        <p>Depuis plus de 5 ans, je conçois et déploie des stratégies de communication, je développe des marques et je pilote des campagnes digitales et terrain pour des organisations, des entreprises du BTP, des marques beauté, des artistes et des événements de 30 000 personnes.</p>
+        <p>JBN Studio réunit autour de moi photographes, reel makers, monteurs vidéo, rédacteurs et graphistes. Ma conviction : la créativité n'a de valeur que si elle sert un objectif. Je relie toujours la Big Idea au plan média, et le contenu aux KPI.</p>
+        <ol class="timeline">
+          <li><span class="y">2021 — aujourd'hui</span><span class="t"><b>Head Marketing &amp; Communication Digital</b><span>Messages de Vie, Abidjan</span></span></li>
+          <li><span class="y">2023 — 2026</span><span class="t"><b>Head Digital &amp; Communication</b><span>Conférences de Pentecôte</span></span></li>
+          <li><span class="y">2022 — aujourd'hui</span><span class="t"><b>Consultant Head Marketing &amp; Digital</b><span>Cure's Nappy, Vons Cosmetic, FDGF, Deri Jess</span></span></li>
+          <li><span class="y">2023 — 2025</span><span class="t"><b>Chef de projet stratégique Marketing &amp; Com</b><span>Strauss Construction · CINergie CI</span></span></li>
+          <li><span class="y">2020 — 2021</span><span class="t"><b>Développeur web, puis Social Media Manager</b><span>Fortic Group · Maria Academy</span></span></li>
+        </ol>
+        <div class="tools"><span>Photoshop</span><span>Illustrator</span><span>Premiere Pro</span><span>After Effects</span><span>DaVinci Resolve</span><span>CapCut Pro</span><span>Meta Ads</span><span>Google Display</span><span>HubSpot</span><span>Claude AI</span></div>
+        <p class="mono" style="font-size:12px">Master avancé Marketing opérationnel (TECH University) · Licence pro Communication Marketing (UVCI) · Certifications UVCI, Udemy, Coursera, Claude AI Academy</p>
+      </div>
+    </div>
+    <div class="photos">
+      <div><img src="assets/img/team.jpg" alt="Séance de travail avec l'équipe" class="par"></div>
+      <div><img src="assets/img/conf.jpg" alt="Jean Bedel lors d'une conférence" class="par"></div>
+      <div><img src="assets/img/walk.jpg" alt="Jean Bedel en blazer clair" class="par"></div>
+      <div><img src="assets/img/senegal.jpg" alt="Mission internationale au Sénégal" class="par"></div>
+    </div>
+  </div>
 </section>
 
-<!-- LEAD MAGNET -->
-<section style="background: #E9EEF3; color: #0A1628">
-<div style="max-width: 1240px; margin: 0 auto; padding: 0 32px 120px">
-<div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: center; padding: 40px; border-radius: 28px; background: #0A1628; color: #F4F1EA">
-<div style="flex: 0 0 120px; height: 150px; border-radius: 12px; background: var(--accent); color: #0A1628; display: flex; flex-direction: column; justify-content: space-between; padding: 14px; box-sizing: border-box; transform: rotate(-4deg)">
-<span style="font-size: 10px; font-weight: 700; letter-spacing: 0.08em">MODÈLE GRATUIT</span>
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 17px; line-height: 1">Plan de com 360°</span>
-</div>
-<div style="flex: 999 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
-<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 28px; letter-spacing: -0.02em; line-height: 1.15">Recevez mon modèle de plan de communication</span>
-<span style="color: #C9D3E0">La trame que j'utilise avec mes clients : objectifs, cibles, Big Idea, plan média, KPI. Gratuit, par email.</span>
-</div>
-<form style="flex: 1 1 360px; min-width: 0; display: flex; flex-wrap: wrap; gap: 10px" aria-label="Recevoir le modèle gratuit">
-<label for="lm-email" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Votre email</label>
-<input id="lm-email" type="email" placeholder="votre@email.com" style="flex: 1 1 200px; min-width: 0; min-height: 52px; padding: 0 18px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.2); background: #10213A; color: #F4F1EA">
-<button type="button" style="min-height: 52px; padding: 0 22px; border-radius: 999px; border: 0; background: var(--accent); color: #0A1628; font-weight: 600; cursor: pointer">Je le veux</button>
-</form>
-</div>
-</div>
+<!-- CONTACT -->
+<section id="contact" class="sec" style="background:var(--bg2);border-top:1px solid var(--line)">
+  <div class="wrap contact">
+    <div class="contact-side">
+      <span class="tag">Réserver une séance</span>
+      <h2 class="h2">Parlez-nous de <span class="it">votre projet.</span></h2>
+      <p class="muted" style="margin:0;font-size:17px">Remplissez ce formulaire : vous êtes recontacté sous 24 h pour fixer un créneau.</p>
+      <ol class="steps3">
+        <li><i>1</i>Vous décrivez votre besoin</li>
+        <li><i>2</i>On échange 30 minutes, gratuitement</li>
+        <li><i>3</i>Vous recevez une proposition claire sous 72 h</li>
+      </ol>
+      <div class="faq">
+        <details><summary>Travaillez-vous hors de Côte d'Ivoire ?<i aria-hidden="true">+</i></summary><p>Oui : campagnes pilotées au Liberia, au Togo, au Bénin, au Soudan du Sud et au Sénégal. Les séances se font en visio.</p></details>
+        <details><summary>Quels moyens de paiement acceptez-vous ?<i aria-hidden="true">+</i></summary><p>[Wave, Orange Money, virement — à préciser]. Un acompte est demandé au démarrage des packs.</p></details>
+        <details><summary>Avez-vous une équipe pour la production ?<i aria-hidden="true">+</i></summary><p>Oui : le studio coordonne photographes, reel makers, monteurs vidéo, rédacteurs et graphistes selon le projet.</p></details>
+      </div>
+      <div class="trust">
+        <span class="mono">Ils nous ont fait confiance</span>
+        <div class="trust-grid"><span>Messages de Vie</span><span>Strauss Construction</span><span>CINergie CI</span><span>Conférences de Pentecôte</span><span>FDGF</span><span>Cure's Nappy</span></div>
+      </div>
+    </div>
+
+    <form class="form" aria-label="Formulaire de réservation">
+      <div class="row">
+        <label for="f-name">Nom complet<input id="f-name" class="field" type="text" placeholder="Votre nom" autocomplete="name"></label>
+        <label for="f-company">Entreprise / organisation<input id="f-company" class="field" type="text" placeholder="Nom de la structure" autocomplete="organization"></label>
+        <label for="f-email">Email<input id="f-email" class="field" type="email" placeholder="vous@email.com" autocomplete="email"></label>
+        <label for="f-phone">WhatsApp<input id="f-phone" class="field" type="tel" placeholder="+225 ..." autocomplete="tel"></label>
+      </div>
+      <label for="f-offer">Ce qui vous intéresse
+        <select id="f-offer" class="field">
+          <option>Séance découverte offerte (30 min)</option>
+          <option>Séance stratégique 1:1</option>
+          <option>Audit de marque &amp; communication</option>
+          <option>Pack Lancement / Rebranding</option>
+          <option>Direction marketing externalisée</option>
+          <option>Formation / atelier d'équipe</option>
+          <option>Autre projet</option>
+        </select>
+      </label>
+      <div class="lbl">Budget envisagé
+        <div class="chips" role="group" aria-label="Budget envisagé" id="budgets" style="margin:0"></div>
+      </div>
+      <label for="f-msg">Votre projet en quelques mots<textarea id="f-msg" class="field" rows="4" placeholder="Objectif, délai, ce qui bloque aujourd'hui..."></textarea></label>
+      <div class="actions">
+        <a id="wa-link" href="https://wa.me/2250788570881" target="_blank" rel="noopener" class="btn btn-p magnet">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.5A9 9 0 1 1 21 12z"/></svg>
+          Envoyer sur WhatsApp</a>
+        <a id="mail-link" href="mailto:jnguessan22@yahoo.com" class="btn btn-g magnet">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          Envoyer par email</a>
+      </div>
+      <p class="muted" style="margin:0;font-size:13px">Vous préférez choisir un créneau directement ? <a href="#contact">[Lien de réservation Calendly]</a></p>
+    </form>
+  </div>
 </section>
 
-<!-- ACTUALITES -->
-<section style="max-width: 1240px; margin: 0 auto; padding: 120px 32px 0; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 680px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent)">Actualités</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 64px); line-height: 1.02; letter-spacing: -0.035em">Ce qui bouge <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: var(--accent)">en ce moment.</span></h2>
-</div>
-<p style="margin: 0; max-width: 380px; color: #A9B6C8">Missions, événements, formations : les dernières nouvelles de mon activité.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px">
-<article class="lift" style="border-radius: 24px; overflow: hidden; background: #10213A; border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column">
-<div style="aspect-ratio: 16 / 10; overflow: hidden"><img src="assets/img/event.jpg" alt="Événement de la Conférence de Pentecôte 2026" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
-<div style="padding: 26px; display: flex; flex-direction: column; gap: 10px">
-<div style="display: flex; gap: 10px; align-items: center; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase"><span style="padding: 3px 10px; border-radius: 999px; background: var(--accent); color: #0A1628">Événement</span><span style="color: #A9B6C8">Mai 2026</span></div>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 21px; line-height: 1.2">Conférence de Pentecôte 2026 : 30 000 participants au Parc des Expositions</h3>
-<p style="margin: 0; color: #A9B6C8; font-size: 15px">Pilotage de la stratégie digitale et de l'équipe communication sur 4 jours.</p>
-<a href="#actualites" style="margin-top: 4px; font-weight: 600; font-size: 14px; text-decoration: none">Lire la suite →</a>
-</div>
-</article>
-<article class="lift" style="border-radius: 24px; overflow: hidden; background: #10213A; border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column">
-<div style="aspect-ratio: 16 / 10; overflow: hidden"><img src="assets/img/senegal.jpg" alt="Mission de communication au Sénégal" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
-<div style="padding: 26px; display: flex; flex-direction: column; gap: 10px">
-<div style="display: flex; gap: 10px; align-items: center; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase"><span style="padding: 3px 10px; border-radius: 999px; background: #4FB3D9; color: #0A1628">International</span><span style="color: #A9B6C8">[Date]</span></div>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 21px; line-height: 1.2">Campagne de communication au Sénégal</h3>
-<p style="margin: 0; color: #A9B6C8; font-size: 15px">Déploiement radio, 360° et digital pour Messages de Vie, après le Liberia, le Togo, le Bénin et le Soudan du Sud.</p>
-<a href="#actualites" style="margin-top: 4px; font-weight: 600; font-size: 14px; text-decoration: none">Lire la suite →</a>
-</div>
-</article>
-<article class="lift" style="border-radius: 24px; overflow: hidden; background: #10213A; border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column">
-<div style="aspect-ratio: 16 / 10; overflow: hidden"><img src="assets/img/grad.jpg" alt="Remise de diplôme" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
-<div style="padding: 26px; display: flex; flex-direction: column; gap: 10px">
-<div style="display: flex; gap: 10px; align-items: center; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase"><span style="padding: 3px 10px; border-radius: 999px; background: #F4F1EA; color: #0A1628">Formation</span><span style="color: #A9B6C8">[Date]</span></div>
-<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 21px; line-height: 1.2">Master avancé en Marketing opérationnel</h3>
-<p style="margin: 0; color: #A9B6C8; font-size: 15px">Nouveau diplôme, plus la certification Expert Marketing opérationnel de la Claude AI Academy.</p>
-<a href="#actualites" style="margin-top: 4px; font-weight: 600; font-size: 14px; text-decoration: none">Lire la suite →</a>
-</div>
-</article>
-</div>
+<!-- CTA FINAL -->
+<section class="wrap" style="padding-top:clamp(80px,10vw,120px);padding-bottom:80px">
+  <div class="final">
+    <div style="flex:999 1 520px;min-width:0;display:flex;flex-direction:column;gap:20px;position:relative">
+      <span class="mono" style="color:var(--ink)">Prochaine étape</span>
+      <h2 class="h2">Construisons une marque <span class="it">qu'on remarque.</span></h2>
+      <p style="margin:0;max-width:520px;font-size:18px">Mission de conseil, campagne, rebranding ou poste de direction marketing : parlons de vos objectifs.</p>
+    </div>
+    <div class="final-links">
+      <a href="mailto:jnguessan22@yahoo.com" class="solid">jnguessan22@yahoo.com <span aria-hidden="true">→</span></a>
+      <a href="tel:+2250788570881">+225 07 88 57 08 81 <span aria-hidden="true">→</span></a>
+      <a href="#contact">LinkedIn — Jean Bedel N'Guessan <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
 </section>
 
-<!-- TEMOIGNAGES -->
-<section style="max-width: 1240px; margin: 0 auto; padding: 120px 32px 0; display: flex; flex-direction: column; gap: 40px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 680px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent)">Ils en parlent</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 64px); line-height: 1.02; letter-spacing: -0.035em">La confiance, <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: var(--accent)">ça se prouve.</span></h2>
-</div>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
-<figure style="margin: 0; padding: 32px; border-radius: 24px; background: #10213A; border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 24px">
-<span style="font-family: 'Instrument Serif', serif; font-size: 64px; line-height: 0.6; color: var(--accent)" aria-hidden="true">“</span>
-<blockquote style="margin: 0; font-size: 18px; line-height: 1.5">[Témoignage à recueillir : le résultat obtenu et comment s'est passée la collaboration.]</blockquote>
-<figcaption style="margin-top: auto; display: flex; flex-direction: column"><span style="font-weight: 600">[Nom], [Poste]</span><span style="font-size: 14px; color: #A9B6C8">Strauss Construction</span></figcaption>
-</figure>
-<figure style="margin: 0; padding: 32px; border-radius: 24px; background: #10213A; border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 24px">
-<span style="font-family: 'Instrument Serif', serif; font-size: 64px; line-height: 0.6; color: var(--accent)" aria-hidden="true">“</span>
-<blockquote style="margin: 0; font-size: 18px; line-height: 1.5">[Témoignage à recueillir : le résultat obtenu et comment s'est passée la collaboration.]</blockquote>
-<figcaption style="margin-top: auto; display: flex; flex-direction: column"><span style="font-weight: 600">[Nom], [Poste]</span><span style="font-size: 14px; color: #A9B6C8">Cure's Nappy</span></figcaption>
-</figure>
-<figure style="margin: 0; padding: 32px; border-radius: 24px; background: #10213A; border: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 24px">
-<span style="font-family: 'Instrument Serif', serif; font-size: 64px; line-height: 0.6; color: var(--accent)" aria-hidden="true">“</span>
-<blockquote style="margin: 0; font-size: 18px; line-height: 1.5">[Témoignage à recueillir : le résultat obtenu et comment s'est passée la collaboration.]</blockquote>
-<figcaption style="margin-top: auto; display: flex; flex-direction: column"><span style="font-weight: 600">[Nom], [Poste]</span><span style="font-size: 14px; color: #A9B6C8">FDGF</span></figcaption>
-</figure>
-</div>
-</section>
+</main>
 
-<!-- TERRAIN -->
-<section style="max-width: 1240px; margin: 0 auto; padding: 120px 32px 0; display: flex; flex-direction: column; gap: 32px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(36px, 4.4vw, 56px); line-height: 1.02; letter-spacing: -0.035em">Sur le terrain, <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: var(--accent)">avec les équipes.</span></h2>
-<p style="margin: 0; max-width: 380px; color: #A9B6C8">Coordination de photographes, reel makers, monteurs vidéo, rédacteurs et graphistes — en Côte d'Ivoire et à l'international.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
-<div style="border-radius: 20px; overflow: hidden; aspect-ratio: 3 / 4"><img src="assets/img/senegal.jpg" alt="Mission internationale au Sénégal, drapeau sénégalais" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
-<div style="border-radius: 20px; overflow: hidden; aspect-ratio: 3 / 4"><img src="assets/img/conf.jpg" alt="Jean Bedel lors d'une conférence, badge au cou" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
-<div style="border-radius: 20px; overflow: hidden; aspect-ratio: 3 / 4"><img src="assets/img/grad.jpg" alt="Cérémonie de remise de diplôme" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
-<div style="border-radius: 20px; overflow: hidden; aspect-ratio: 3 / 4"><img src="assets/img/event.jpg" alt="Photo de groupe lors d'un événement" style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
-</div>
-</section>
-
-<!-- PARCOURS -->
-<section id="parcours" style="max-width: 1240px; margin: 0 auto; padding: 120px 32px; display: flex; flex-wrap: wrap; gap: 56px">
-<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent)">Parcours</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(36px, 4.4vw, 56px); line-height: 1.02; letter-spacing: -0.035em">Du code <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400">à la marque.</span></h2>
-<p style="margin: 0; color: #A9B6C8">Parti du développement web, je suis passé par le social media pour arriver à la direction marketing &amp; communication.</p>
-<div style="display: flex; flex-direction: column; gap: 14px; padding: 24px; border-radius: 20px; background: #10213A; border: 1px solid rgba(255,255,255,0.08)">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #A9B6C8">Formations</span>
-<span style="font-size: 15px">Master avancé Marketing opérationnel — <span style="color: #A9B6C8">TECH University</span></span>
-<span style="font-size: 15px">Licence pro Communication Marketing — <span style="color: #A9B6C8">UVCI</span></span>
-<span style="font-size: 15px">Certification Expert Marketing opérationnel — <span style="color: #A9B6C8">Claude AI Academy</span></span>
-<span style="font-size: 15px">Études de marché &amp; comportement consommateur — <span style="color: #A9B6C8">Coursera</span></span>
-</div>
-</div>
-<ol style="flex: 999 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 22px 0; border-top: 1px solid rgba(255,255,255,0.12)">
-<span style="flex: 0 0 150px; font-size: 14px; color: var(--accent); font-weight: 600">2021 — aujourd'hui</span>
-<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px">Head Marketing &amp; Communication Digital</span><span style="color: #A9B6C8; font-size: 15px">Messages de Vie, Abidjan</span></div>
-</li>
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 22px 0; border-top: 1px solid rgba(255,255,255,0.12)">
-<span style="flex: 0 0 150px; font-size: 14px; color: var(--accent); font-weight: 600">2023 — 2026</span>
-<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px">Head Digital &amp; Communication</span><span style="color: #A9B6C8; font-size: 15px">Conférences de Pentecôte</span></div>
-</li>
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 22px 0; border-top: 1px solid rgba(255,255,255,0.12)">
-<span style="flex: 0 0 150px; font-size: 14px; color: var(--accent); font-weight: 600">2022 — aujourd'hui</span>
-<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px">Consultant Head Marketing &amp; Digital</span><span style="color: #A9B6C8; font-size: 15px">Cure's Nappy, Vons Cosmetic, FDGF, Deri Jess</span></div>
-</li>
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 22px 0; border-top: 1px solid rgba(255,255,255,0.12)">
-<span style="flex: 0 0 150px; font-size: 14px; color: var(--accent); font-weight: 600">2025</span>
-<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px">Chef de projet stratégique Marketing &amp; Com</span><span style="color: #A9B6C8; font-size: 15px">Strauss Construction · CINergie CI (2023–2024)</span></div>
-</li>
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 22px 0; border-top: 1px solid rgba(255,255,255,0.12)">
-<span style="flex: 0 0 150px; font-size: 14px; color: var(--accent); font-weight: 600">2021</span>
-<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px">Social Media Manager &amp; Content Creator</span><span style="color: #A9B6C8; font-size: 15px">Maria Academy, Abidjan</span></div>
-</li>
-<li style="display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 22px 0; border-top: 1px solid rgba(255,255,255,0.12); border-bottom: 1px solid rgba(255,255,255,0.12)">
-<span style="flex: 0 0 150px; font-size: 14px; color: var(--accent); font-weight: 600">2020</span>
-<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 20px">Développeur web &amp; communication digitale</span><span style="color: #A9B6C8; font-size: 15px">Fortic Group SARL, Abidjan</span></div>
-</li>
-</ol>
-<div style="flex: 1 1 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding-top: 8px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #A9B6C8; margin-right: 8px">Boîte à outils</span>
-<span style="padding: 6px 12px; border-radius: 8px; background: rgba(255,255,255,0.06); font-size: 13px">Photoshop</span>
-<span style="padding: 6px 12px; border-radius: 8px; background: rgba(255,255,255,0.06); font-size: 13px">Illustrator</span>
-<span style="padding: 6px 12px; border-radius: 8px; background: rgba(255,255,255,0.06); font-size: 13px">Premiere Pro</span>
-<span style="padding: 6px 12px; border-radius: 8px; background: rgba(255,255,255,0.06); font-size: 13px">After Effects</span>
-<span style="padding: 6px 12px; border-radius: 8px; background: rgba(255,255,255,0.06); font-size: 13px">DaVinci Resolve</span>
-<span style="padding: 6px 12px; border-radius: 8px; background: rgba(255,255,255,0.06); font-size: 13px">CapCut Pro</span>
-<span style="padding: 6px 12px; border-radius: 8px; background: rgba(255,255,255,0.06); font-size: 13px">Affinity Designer</span>
-<span style="padding: 6px 12px; border-radius: 8px; background: rgba(255,255,255,0.06); font-size: 13px">Meta Ads</span>
-<span style="padding: 6px 12px; border-radius: 8px; background: rgba(255,255,255,0.06); font-size: 13px">Google Display</span>
-<span style="padding: 6px 12px; border-radius: 8px; background: rgba(255,255,255,0.06); font-size: 13px">HubSpot</span>
-<span style="padding: 6px 12px; border-radius: 8px; background: rgba(255,255,255,0.06); font-size: 13px">Claude AI</span>
-<span style="padding: 6px 12px; border-radius: 8px; background: rgba(255,255,255,0.06); font-size: 13px">Lovable</span>
-</div>
-</section>
-
-<!-- RESERVATION -->
-<section id="contact" style="border-top: 1px solid rgba(255,255,255,0.08); background: #0F1E33">
-<div style="max-width: 1240px; margin: 0 auto; padding: 120px 32px; display: flex; flex-wrap: wrap; gap: 56px">
-<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent)">Réserver une séance</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(40px, 5vw, 60px); line-height: 1.02; letter-spacing: -0.035em">Parlez-moi de <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: var(--accent)">votre projet.</span></h2>
-<p style="margin: 0; color: #C9D3E0; font-size: 17px">Remplissez ce formulaire : je vous recontacte sous 24 h pour fixer un créneau.</p>
-<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px">
-<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: 0 0 28px; height: 28px; border-radius: 50%; background: var(--accent); color: #0A1628; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700">1</span><span>Vous décrivez votre besoin</span></li>
-<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: 0 0 28px; height: 28px; border-radius: 50%; background: var(--accent); color: #0A1628; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700">2</span><span>On échange 30 minutes, gratuitement</span></li>
-<li style="display: flex; gap: 14px; align-items: flex-start"><span style="flex: 0 0 28px; height: 28px; border-radius: 50%; background: var(--accent); color: #0A1628; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700">3</span><span>Vous recevez une proposition claire sous 72 h</span></li>
-</ol>
-<div class="faq" style="display: flex; flex-direction: column; margin-top: 16px; border-top: 1px solid rgba(255,255,255,0.12)">
-<details style="border-bottom: 1px solid rgba(255,255,255,0.12)">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 56px; font-weight: 600">Travaillez-vous hors de Côte d'Ivoire ?<span class="plus" style="font-size: 24px; color: var(--accent)" aria-hidden="true">+</span></summary>
-<p style="margin: 0 0 18px; color: #A9B6C8; font-size: 15px">Oui : j'ai piloté des campagnes au Liberia, au Togo, au Bénin, au Soudan du Sud et au Sénégal. Les séances se font en visio.</p>
-</details>
-<details style="border-bottom: 1px solid rgba(255,255,255,0.12)">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 56px; font-weight: 600">Quels moyens de paiement acceptez-vous ?<span class="plus" style="font-size: 24px; color: var(--accent)" aria-hidden="true">+</span></summary>
-<p style="margin: 0 0 18px; color: #A9B6C8; font-size: 15px">[Wave, Orange Money, virement — à préciser]. Un acompte est demandé au démarrage des packs.</p>
-</details>
-<details style="border-bottom: 1px solid rgba(255,255,255,0.12)">
-<summary style="display: flex; justify-content: space-between; align-items: center; gap: 12px; min-height: 56px; font-weight: 600">Avez-vous une équipe pour la production ?<span class="plus" style="font-size: 24px; color: var(--accent)" aria-hidden="true">+</span></summary>
-<p style="margin: 0 0 18px; color: #A9B6C8; font-size: 15px">Oui : je coordonne photographes, reel makers, monteurs vidéo, rédacteurs et graphistes selon le projet.</p>
-</details>
-</div>
-<div style="display: flex; flex-direction: column; gap: 14px; margin-top: 12px; padding: 24px; border-radius: 20px; background: #10213A; border: 1px solid rgba(255,255,255,0.08)">
-<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #A9B6C8">Ils m'ont fait confiance</span>
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
-<span style="min-height: 52px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 6px 10px; border-radius: 12px; background: #0A1628; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 15px; color: #DCE3EC">Messages de Vie</span>
-<span style="min-height: 52px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 6px 10px; border-radius: 12px; background: #0A1628; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 15px; color: #DCE3EC">Strauss Construction</span>
-<span style="min-height: 52px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 6px 10px; border-radius: 12px; background: #0A1628; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 15px; color: #DCE3EC">CINergie CI</span>
-<span style="min-height: 52px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 6px 10px; border-radius: 12px; background: #0A1628; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 15px; color: #DCE3EC">Conférences de Pentecôte</span>
-<span style="min-height: 52px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 6px 10px; border-radius: 12px; background: #0A1628; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 15px; color: #DCE3EC">FDGF</span>
-<span style="min-height: 52px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 6px 10px; border-radius: 12px; background: #0A1628; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 15px; color: #DCE3EC">Cure's Nappy</span>
-</div>
-</div>
-</div>
-
-<form style="flex: 999 1 520px; min-width: 0; padding: 36px; border-radius: 28px; background: #10213A; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; gap: 18px" aria-label="Formulaire de réservation">
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px">
-<div style="display: flex; flex-direction: column; gap: 8px">
-<label for="f-name" style="font-size: 14px; font-weight: 600; color: #C9D3E0">Nom complet</label>
-<input id="f-name" type="text" placeholder="Votre nom" style="min-height: 50px; padding: 0 16px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.18); background: #0A1628; color: #F4F1EA">
-</div>
-<div style="display: flex; flex-direction: column; gap: 8px">
-<label for="f-company" style="font-size: 14px; font-weight: 600; color: #C9D3E0">Entreprise / organisation</label>
-<input id="f-company" type="text" placeholder="Nom de la structure" style="min-height: 50px; padding: 0 16px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.18); background: #0A1628; color: #F4F1EA">
-</div>
-<div style="display: flex; flex-direction: column; gap: 8px">
-<label for="f-email" style="font-size: 14px; font-weight: 600; color: #C9D3E0">Email</label>
-<input id="f-email" type="email" placeholder="vous@email.com" style="min-height: 50px; padding: 0 16px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.18); background: #0A1628; color: #F4F1EA">
-</div>
-<div style="display: flex; flex-direction: column; gap: 8px">
-<label for="f-phone" style="font-size: 14px; font-weight: 600; color: #C9D3E0">WhatsApp</label>
-<input id="f-phone" type="tel" placeholder="+225 ..." style="min-height: 50px; padding: 0 16px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.18); background: #0A1628; color: #F4F1EA">
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 8px">
-<label for="f-offer" style="font-size: 14px; font-weight: 600; color: #C9D3E0">Ce qui vous intéresse</label>
-<select id="f-offer" style="min-height: 50px; padding: 0 16px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.18); background: #0A1628; color: #F4F1EA">
-<option value="Séance découverte offerte (30 min)">Séance découverte offerte (30 min)</option>
-<option value="Séance stratégique 1:1">Séance stratégique 1:1</option>
-<option value="Audit de marque &amp; communication">Audit de marque &amp; communication</option>
-<option value="Pack Lancement / Rebranding">Pack Lancement / Rebranding</option>
-<option value="Direction marketing externalisée">Direction marketing externalisée</option>
-<option value="Formation / atelier d'équipe">Formation / atelier d'équipe</option>
-<option value="Autre projet">Autre projet</option>
-</select>
-</div>
-<div style="display: flex; flex-direction: column; gap: 8px">
-<span style="font-size: 14px; font-weight: 600; color: #C9D3E0">Budget envisagé</span>
-<div role="group" aria-label="Budget envisagé" style="display: flex; flex-wrap: wrap; gap: 8px">
-<div id="budgets" style="display: contents"></div>
-</div>
-</div>
-<div style="display: flex; flex-direction: column; gap: 8px">
-<label for="f-msg" style="font-size: 14px; font-weight: 600; color: #C9D3E0">Votre projet en quelques mots</label>
-<textarea id="f-msg" rows="4" placeholder="Objectif, délai, ce qui bloque aujourd'hui..." style="padding: 14px 16px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.18); background: #0A1628; color: #F4F1EA; resize: vertical"></textarea>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 6px">
-<a href="https://wa.me/2250788570881" id="wa-link" target="_blank" rel="noopener" style="flex: 1 1 220px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 0 22px; border-radius: 999px; background: var(--accent); color: #0A1628; font-weight: 600; text-decoration: none">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.5A9 9 0 1 1 21 12z"></path></svg>
-Envoyer sur WhatsApp</a>
-<a href="mailto:jnguessan22@yahoo.com" id="mail-link" style="flex: 1 1 220px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 0 22px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.25); color: #F4F1EA; font-weight: 600; text-decoration: none">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
-Envoyer par email</a>
-</div>
-<p style="margin: 0; font-size: 13px; color: #A9B6C8">Vous préférez choisir un créneau directement ? <a href="#contact">[Lien de réservation Calendly]</a></p>
-</form>
-</div>
-</section>
-
-<!-- CTA CONTACT -->
-<section id="joindre" style="max-width: 1240px; margin: 0 auto; padding: 96px 32px">
-<div style="border-radius: 32px; background: var(--accent); color: #0A1628; padding: clamp(40px, 6vw, 88px); display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-end; justify-content: space-between">
-<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
-<span style="font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase">Prochaine étape</span>
-<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(44px, 6.4vw, 96px); line-height: 0.95; letter-spacing: -0.045em">Construisons une marque <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400">qu'on remarque.</span></h2>
-<p style="margin: 0; max-width: 520px; font-size: 18px">Poste de Responsable Marketing, mission de conseil ou campagne : parlons de vos objectifs.</p>
-</div>
-<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<a href="mailto:jnguessan22@yahoo.com" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; padding: 0 22px; border-radius: 16px; background: #0A1628; color: #F4F1EA; font-weight: 600; text-decoration: none">jnguessan22@yahoo.com
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
-<a href="tel:+2250788570881" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; padding: 0 22px; border-radius: 16px; border: 1.5px solid #0A1628; color: #0A1628; font-weight: 600; text-decoration: none">+225 07 88 57 08 81
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
-<a href="#contact" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; padding: 0 22px; border-radius: 16px; border: 1.5px solid #0A1628; color: #0A1628; font-weight: 600; text-decoration: none">LinkedIn — Jean Bedel N'Guessan
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></a>
-</div>
-</div>
-</section>
-
-<!-- WHATSAPP FLOTTANT -->
-<a href="https://wa.me/2250788570881" aria-label="Écrire sur WhatsApp" style="position: fixed; right: 24px; bottom: 24px; z-index: 30; display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 20px; border-radius: 999px; background: #25D366; color: #0A1628; font-weight: 700; font-size: 15px; text-decoration: none; box-shadow: 0 12px 30px rgba(0,0,0,0.35)">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.5A9 9 0 1 1 21 12z"></path></svg>
-Une question ?</a>
-
-<!-- FOOTER -->
-<footer style="border-top: 1px solid rgba(255,255,255,0.08)">
-<div style="max-width: 1240px; margin: 0 auto; padding: 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 14px; color: #A9B6C8">
-<span>© 2026 Jean Bedel N'Guessan — Marketing, Branding &amp; Communication 360°</span>
-<span>Abidjan, Côte d'Ivoire · Français · Anglais</span>
-</div>
+<footer>
+  <div class="wrap">
+    <span>© 2026 JBN Studio — Jean Bedel N'Guessan</span>
+    <span>Abidjan, Côte d'Ivoire · FR / EN</span>
+  </div>
 </footer>
 
-</div>
+<a href="https://wa.me/2250788570881" class="wa" target="_blank" rel="noopener" aria-label="Écrire sur WhatsApp">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.5 7.8L3 21l1.2-4.5A9 9 0 1 1 21 12z"/></svg>
+  Une question ?</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/mask.js?v=5"></script>
+<script src="assets/js/main.js?v=5"></script>
 </body>
 </html>

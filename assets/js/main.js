@@ -18,7 +18,7 @@
   ];
   var CATS = [
     { id: 'all', label: 'Tout' }, { id: 'reel', label: 'Reels 9/16' }, { id: 'kv', label: 'Key visuals' },
-    { id: 'carrousel', label: 'Carrousels' }, { id: 'id', label: 'Identité' }, { id: 'event', label: 'Événementiel' }
+    { id: 'carrousel', label: 'Carrousels' }, { id: 'id', label: 'Identité' }, { id: 'web', label: 'Web & apps' }, { id: 'event', label: 'Événementiel' }
   ];
   var TONES = {
     orange: 'background:#FF7A1A;color:#07080B',
@@ -39,9 +39,13 @@
     { cat: 'reel', label: 'Reel 9/16', title: 'Personal branding — Deri Jess', mono: 'Reel\nDeri Jess', tone: 'orange' },
     { cat: 'kv', label: 'Key visual', title: 'Lancement de l’app My CINergie', mono: 'My\nCINergie', tone: 'paper' },
     { cat: 'event', label: 'Campagne internationale', title: 'Dispositif terrain — Sénégal', img: IMG.senegal },
-    { cat: 'kv', label: 'Social ads', title: 'Campagnes Meta Ads — Vons Cosmetic', mono: 'Vons\nCosmetic', tone: 'ink' }
+    { cat: 'kv', label: 'Social ads', title: 'Campagnes Meta Ads — Vons Cosmetic', mono: 'Vons\nCosmetic', tone: 'ink' },
+    { cat: 'web', label: 'Site marchand', title: 'Site e-commerce — Strauss Construction', mono: '&lt;/&gt;\nStrauss', tone: 'line' },
+    { cat: 'web', label: 'Application mobile', title: 'Maquettes de l’app My CINergie', mono: 'App\nMy CINergie', tone: 'orange' },
+    { cat: 'web', label: 'Site web', title: 'Sites web — Cure’s Nappy & Vons Cosmetic', mono: '&lt;/&gt;\nSites beauté', tone: 'paper' },
+    { cat: 'web', label: 'Application web', title: 'Dashboards & gestion des paiements — Fortic Group', mono: 'Dashboard\nFortic', tone: 'ink' }
   ];
-  var OFFERS = ['Séance découverte offerte (30 min)', 'Séance stratégique 1:1', 'Audit de marque & communication', 'Pack Lancement / Rebranding', 'Direction marketing externalisée', 'Formation / atelier d’équipe', 'Autre projet'];
+  var OFFERS = ['Séance découverte offerte (30 min)', 'Séance stratégique 1:1', 'Audit de marque & communication', 'Pack Lancement / Rebranding', 'Direction marketing externalisée', 'Formation / atelier d’équipe', 'Landing page', 'Site internet (vitrine ou e-commerce)', 'Application web / mobile', 'Projet digital sur mesure', 'Autre projet'];
   var BUDGETS = ['Moins de 250 000 F', '250 000 – 1 M F', '1 M – 3 M F', 'Plus de 3 M F'];
   var st = { video: 0, filter: 'all', budget: '' };
 
@@ -76,10 +80,10 @@
   function renderGallery(animate) {
     var shown = ITEMS.filter(function (it) { return st.filter === 'all' || it.cat === st.filter; });
     $('#gallery').innerHTML = shown.map(function (it) {
-      var ratio = it.cat === 'reel' ? '9/16' : it.cat === 'carrousel' ? '1/1' : '4/5';
+      var ratio = it.cat === 'reel' ? '9/16' : it.cat === 'carrousel' ? '1/1' : it.cat === 'web' ? '4/3' : '4/5';
       var inner = it.img
         ? '<img src="' + it.img + '" alt="' + it.title + '" loading="lazy">'
-        : '<span class="tile-ph"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg><b>' + it.mono + '</b><small>[Ajouter votre visuel]</small></span>';
+        : '<span class="tile-ph">' + (it.cat === 'web' ? '<span class="tile-dots" aria-hidden="true"><i></i><i></i><i></i></span>' : '') + '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg><b>' + it.mono + '</b><small>[Ajouter votre visuel]</small></span>';
       return '<figure class="tile tilt"><div class="tile-box" style="aspect-ratio:' + ratio + ';' + (it.img ? 'background:#14171E' : TONES[it.tone]) + '">' + inner + '</div>' +
         '<figcaption><span>' + it.label + '</span><b>' + it.title + '</b></figcaption></figure>';
     }).join('');
@@ -273,7 +277,7 @@
   });
 
   /* ---------- Apparitions en cascade ---------- */
-  var items = $$('.card, .ccard, .doc, .why > div, .timeline li, .steps3 li, .faq details, .trust, .form, .lm, .cta-band, .tools span, .photos > div, .video-main, .vthumb, .feat')
+  var items = $$('.card, .ccard, .doc, .refs > span, .why > div, .timeline li, .steps3 li, .faq details, .trust, .form, .lm, .cta-band, .tools span, .photos > div, .video-main, .vthumb, .feat')
     .filter(function (el) { return !el.closest('.hero') && !el.closest('#gallery') && !el.closest('.method'); });
   gsap.set(items, { opacity: 0, y: 70 });
   ScrollTrigger.batch(items, {
